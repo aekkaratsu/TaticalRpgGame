@@ -1,4 +1,4 @@
 //initialize
 action = function () {
-    //when click
+    // Write on Childrens
 }

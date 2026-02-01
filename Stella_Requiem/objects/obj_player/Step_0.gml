@@ -20,10 +20,10 @@ else //not moving
 {
     //Logic is checking player is moving which direction and then set to idle
     // == for compare, = for set value
-	if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
-    else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left; 
-    else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
-    else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
+	if (sprite_index == spr_player_walk_right) sprite_index = spr_player_main_idle_B;
+    else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_main_idle_B; 
+    else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_main_idle_B;
+    else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_main_idle_B;
 }
 
 
@@ -32,7 +32,6 @@ if (keyboard_check_pressed(vk_space))
 {
     if (alarm[2] < 0){ 
         
-    // Call the_obj_attack     
     var _inst = instance_create_depth(x, y, depth, obj_attack);
     _inst.image_angle = facing;
     _inst.damage *= damage;
