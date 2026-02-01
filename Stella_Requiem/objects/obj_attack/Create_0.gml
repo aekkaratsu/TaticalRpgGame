@@ -1,0 +1,2 @@
+//Initialize
+damage = 1;

@@ -32,6 +32,7 @@ if (keyboard_check_pressed(vk_space))
 {
     if (alarm[2] < 0){ 
         
+    // Call the_obj_attack     
     var _inst = instance_create_depth(x, y, depth, obj_attack);
     _inst.image_angle = facing;
     _inst.damage *= damage;
