@@ -1,5 +1,5 @@
 if (current_message < 0) exit;
-var _str = messages[current_message].msg; //.msg behind is short name for calling from others
+var _str = messages[current_message].msg; //.msg behind is less name for calling from others
 
 if (current_char < string_length(_str))
 {

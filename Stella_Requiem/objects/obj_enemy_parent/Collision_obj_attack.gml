@@ -1,6 +1,5 @@
 if (alarm[1] < 0)
-{ 
-    // Call Damage from obj_attack
+{
     hp = hp - other.damage;
     image_blend = c_red;
     

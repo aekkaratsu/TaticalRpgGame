@@ -1,6 +1,5 @@
 // Battle Manager is for manage turns Using the Alram events
 
-
 //initialize
 enemy_turn = 0;
 damage_to_enemy =0;
