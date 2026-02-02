@@ -1,23 +1,45 @@
-if (current_message < 0) exit;
-var _str = messages[current_message].msg; //.msg behind is less name for calling from others
+// Prevent index out of bound
 
-if (current_char < string_length(_str))
+if (current_message < 0 || current_message >= array_length(messages)) exit;
+    
+var _str = messages[current_message].msg; // Behind "." is for calling the other
+var _len = string_length(_str);
+var _key_board_input = keyboard_check_pressed(input_key) // Use "Pressed" to detect only 1 times input
+
+if (current_char < _len)
 {
-    current_char += char_speed * (1 = real(keyboard_check(input_key)));
-    draw_message = string_copy(_str, 0, current_char);
-}    
-else if (keyboard_check_pressed(input_key))
-{
-    current_message++; // char++
-    if (current_message >= array_length(messages)) //when char reach length inst_destory
+    if (_key_board_input) 
     {
-        instance_destroy();
-        
-        if (next_room) room_goto_next(); // if true go to next room 
-            if (previous_room) room_goto_previous();
+        // Case A : immediately diplay all the message
+        current_char = _len; // 0 1 2 3 4 ...
     }
     else 
     {
-    	current_char = 0;
+        // Case B ; Reveling char one by one base on char_speed
+        current_char += char_speed; 
+    }
+    
+    // Copy _str and draw
+    draw_message = string_copy(_str, 0, floor(current_char));
+}    
+
+// When finished revealing Char
+else if (_key_board_input)
+{
+    // Check is next message is validable?
+    if (current_message < array_length(messages) - 1) 
+    {
+        // if true go to next message and set the current_char to 0
+        current_message++;
+        current_char = 0;
+    }
+    else 
+    {
+        // Check the coodition ( By set the variable on npc Instance you can make some of this become true )
+        if (next_room) room_goto_next();
+        else if (previous_room) room_goto_previous();
+        
+        instance_destroy(); 
     }
 }
+    

@@ -11,7 +11,7 @@ _dy += 16;
 draw_set_font(Font1);
 
 
-//Draw name string
+// Drawing Speaker string
 var _name = messages[current_message].name;//get name
 draw_set_color(global.char_colors[$ _name]);//care full the name must be correct
 draw_text(_dx, _dy, _name);
