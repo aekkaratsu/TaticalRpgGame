@@ -1,4 +1,4 @@
-//Draw directly in the room
+// Draw directly in the room ( Top left )
 var _dx = 16;
 var _dy = 16;
 var _barw = 256;
@@ -9,7 +9,7 @@ draw_set_font(Font1);
 draw_set_halign(fa_center); //align = adjust the position loike the microsoft word
 draw_set_valign(fa_middle);
 
-// Healthbar
+// Health Bar
 var _health_barw = _barw * (hp / hp_total);
 
 draw_sprite_stretched(spr_box, 0, _dx, _dy, _barw, _barh);

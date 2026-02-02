@@ -33,7 +33,7 @@ function add_xp (_xp_to_add)
         create_dialog([
         {
             name: "Congrats",
-            msg: $"You leveled up! Your stats are:\nLVL: {level}\nHp {hp_total}\n" //Use $ to put to var in message
+            msg: $"You leveled up! Your stats are:\nLVL: {level}\nHp {hp_total}\nDamage {damage}" //Use $ to put to var in message
         }
         ])
     }    

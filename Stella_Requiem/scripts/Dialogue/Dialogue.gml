@@ -11,7 +11,8 @@ function create_dialog(_messages){
 // High word with colors
 char_colors = {
     "JeyGrude": c_green,
-    "Player": c_aqua
+    "Player": c_aqua,
+    "Congrats": c_yellow
    
 }
 

@@ -1,4 +1,4 @@
-//show the message icon over the npc
+// Show the message icon over the npc
 draw_self();
 
 if (can_talk && !instance_exists(obj_dialog))
