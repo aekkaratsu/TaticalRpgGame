@@ -8,7 +8,7 @@ draw_sprite_stretched(spr_box, 0, _dx, _dy, _boxw, _boxh);
 _dx += 16;
 _dy += 16;
 
-draw_set_font(Font1);
+draw_set_font(DialogueFonts);
 
 
 // Drawing Speaker string

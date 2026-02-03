@@ -5,7 +5,7 @@ var _barw = 256;
 var _barh = 32;
 
 // Properties
-draw_set_font(Font1);
+draw_set_font(DialogueFonts);
 draw_set_halign(fa_center); //align = adjust the position loike the microsoft word
 draw_set_valign(fa_middle);
 

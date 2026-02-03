@@ -4,7 +4,7 @@ if (current_message < 0 || current_message >= array_length(messages)) exit;
     
 var _str = messages[current_message].msg; // Behind "." is for calling the other
 var _len = string_length(_str);
-var _key_board_input = keyboard_check_pressed(input_key) // Use "Pressed" to detect only 1 times input
+var _key_board_input = keyboard_check_pressed(input_key) && can_input; // Use "Pressed" to detect only 1 times input
 
 if (current_char < _len)
 {
