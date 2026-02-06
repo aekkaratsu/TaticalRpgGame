@@ -1,4 +1,4 @@
-// Enter the Battle stance
+// Enter the Battle stance , Set player_data to variable data obj_battle_< player/ enemy >
 
 if (instance_exists(obj_dialog)) exit;
 if (instance_exists(obj_battle_switcher)) exit;

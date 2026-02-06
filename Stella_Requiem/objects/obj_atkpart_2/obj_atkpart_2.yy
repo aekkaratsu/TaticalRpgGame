@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_action_light",
+  "%Name":"obj_atkpart_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_action_light",
+  "name":"obj_atkpart_2",
   "overriddenProperties":[],
   "parent":{
     "name":"AttackByParts",
     "path":"folders/Objects/BattleManager/AttackByParts.yy",
   },
   "parentObjectId":{
-    "name":"obj_action_parent",
-    "path":"objects/obj_action_parent/obj_action_parent.yy",
+    "name":"obj_atkbyparts_parent_",
+    "path":"objects/obj_atkbyparts_parent_/obj_atkbyparts_parent_.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_light",
-    "path":"sprites/spr_button_light/spr_button_light.yy",
+    "name":"spr_bypart_2",
+    "path":"sprites/spr_bypart_2/spr_bypart_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
