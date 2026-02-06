@@ -11,10 +11,10 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [titlemap], undefined, un
 // Use condition to change sprites
 if (_hor != 0 or _ver != 0)
 {
-    if (_ver > 0) sprite_index = spr_player_walk_down;
-    else if (_ver < 0) sprite_index = spr_player_walk_up;
-    else if (_hor > 0) sprite_index = spr_player_walk_right;
-    else if (_hor < 0) sprite_index = spr_player_walk_left; 
+    if (_ver > 0) sprite_index = spr_player_main_walk_F;
+    else if (_ver < 0) sprite_index = spr_player_main_walk_B;
+    else if (_hor > 0) sprite_index = spr_player_main_walk_R;
+    else if (_hor < 0) sprite_index = spr_player_main_walk_L; 
         
     facing = point_direction(0, 0, _hor, _ver);
 } 
@@ -22,10 +22,10 @@ else //not moving
 {
     //Logic is checking player is moving which direction and then set to idle
     // == for compare, = for set value
-	if (sprite_index == spr_player_walk_right) sprite_index = spr_player_main_idle_B;
-    else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_main_idle_B; 
-    else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_main_idle_B;
-    else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_main_idle_B;
+	if (sprite_index == spr_player_main_walk_R) sprite_index = spr_player_main_idle_R;
+    else if (sprite_index == spr_player_main_walk_L) sprite_index = spr_player_main_idle_L; 
+    else if (sprite_index == spr_player_main_walk_B) sprite_index = spr_player_main_idle_B;
+    else if (sprite_index == spr_player_main_walk_F) sprite_index = spr_player_main_idle_F;
 }
 
 
