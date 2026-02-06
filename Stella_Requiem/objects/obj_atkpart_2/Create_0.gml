@@ -10,6 +10,11 @@ action =  function ()
     }
     
     obj_battle_manager.player_attack(obj_battle_player.data.damage * 1) // Modify in childrens
+     // Set Force zoom = false in the obj camera
+     if (instance_exists(obj_camera)) 
+    {
+        obj_camera.force_zoom = false;
+    }
         
     
 }

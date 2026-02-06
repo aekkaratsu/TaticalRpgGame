@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"switch_map",
-  "eventList":[],
+  "%Name":"obj_atkpart_cancel",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"switch_map",
+  "name":"obj_atkpart_cancel",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"AttackByParts",
+    "path":"folders/Objects/BattleManager/AttackByParts.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_atkbyparts_parent_",
+    "path":"objects/obj_atkbyparts_parent_/obj_atkbyparts_parent_.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle_down",
-    "path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",
+    "name":"spr_bypart_cancel",
+    "path":"sprites/spr_bypart_cancel/spr_bypart_cancel.yy",
   },
   "spriteMaskId":null,
   "visible":true,
