@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_can1",
+  "%Name":"obj_inter_trash1",
   "eventList":[],
   "managed":true,
-  "name":"obj_can1",
+  "name":"obj_inter_trash1",
   "overriddenProperties":[],
   "parent":{
     "name":"Structure",
-    "path":"folders/Objects/Structure.yy",
+    "path":"folders/Objects/InteractiveObject/Structure.yy",
   },
   "parentObjectId":{
     "name":"obj_interact_parent",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_can",
-    "path":"sprites/spr_can/spr_can.yy",
+    "name":"spr_trash",
+    "path":"sprites/spr_trash/spr_trash.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,0 +1,22 @@
+if (instance_exists(obj_dialog)) exit;
+    
+if (talking == true) 
+{
+    InventoryAdd(obj_inventory, 0); 
+    instance_destroy();
+    exit; 
+}
+
+if (instance_exists(obj_player) && distance_to_object(obj_player) < 8) // if not near enough cant talk
+{
+    can_interact = true;
+    if (keyboard_check_pressed(input_key))
+    {
+        create_dialog(dialog); // Dialog is variable can set when placing spirte in the room then double click on it and set Variable
+        talking = true;
+    }
+}
+else 
+{
+    can_interact = false;
+}

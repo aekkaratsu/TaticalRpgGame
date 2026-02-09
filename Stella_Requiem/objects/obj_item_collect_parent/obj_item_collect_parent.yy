@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interact_parent",
+  "%Name":"obj_item_collect_parent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interact_parent",
+  "name":"obj_item_collect_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"InteractiveObject",
-    "path":"folders/Objects/InteractiveObject.yy",
+    "name":"InteractiveItems",
+    "path":"folders/Objects/InteractiveObject/InteractiveItems.yy",
   },
   "parentObjectId":null,
   "persistent":false,

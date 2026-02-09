@@ -13,8 +13,8 @@ char_colors = {
     "JeyGrude": c_green,
     "Player": c_aqua,
     "Congrats": c_yellow,
-    "Narrator": c_aqua
-   
+    "Narrator": c_aqua,
+    "???" : c_white
 }
 
 
@@ -66,8 +66,17 @@ stu_can_dia1 = [
 } ,  
 ]  
 
+inter_item_test = [
+{
+    name:"???",
+    msg:"Don't Know what is it." 
+} ,
 
-
+{
+    name:"???",
+    msg:"Is maybe relic form advance era." 
+} ,  
+]  
 
 
 // To using it you must set The Variable one the Rooms ( Double Click with your instance )
