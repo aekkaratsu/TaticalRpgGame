@@ -1,7 +1,7 @@
-// Check if dialogue apper then exit this event ( Player cant move )
-
+// Check if dialogue or somethings apper then exit this event ( Player cant move )
 if(instance_exists(obj_dialog)) exit;
-
+if (obj_inventory.show_inventory = true) exit;
+    
 // Check Input
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));

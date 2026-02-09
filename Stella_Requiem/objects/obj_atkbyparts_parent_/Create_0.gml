@@ -1,9 +1,9 @@
 image_alpha = 0
 
-// Condition for Check if button trasparent = 0 then cant press
 
 action =  function ()
 {
+    // Condition for Check if button trasparent = 0 then return (return in fucntion meaning exit function)
     if (image_alpha <=0)
     {
         return; // Exit from function
