@@ -1,8 +1,13 @@
 // Battle Manager is for manage turns Using the Alram events
 
-//initialize
+//=== initialize ===
+//Turn
 enemy_turn = 0;
-damage_to_enemy =0;
+waiting_for_qte = false;
+
+//damage
+damage_to_enemy = 0;
+pending_enemy_damage = 0;
 
 player_attack = function (_damage) 
 {
