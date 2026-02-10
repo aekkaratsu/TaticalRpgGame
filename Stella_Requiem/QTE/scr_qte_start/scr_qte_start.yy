@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_qte_start",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_qte_start",
+  "parent":{
+    "name":"QTE",
+    "path":"folders/Objects/QTE.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
