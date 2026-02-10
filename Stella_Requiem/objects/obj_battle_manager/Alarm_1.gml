@@ -1,10 +1,5 @@
-// Enemy turn
-var _enemy_damage = obj_battle_enemy.data.damage * random_range(0.7, 1.2);
-obj_battle_player.data.hp -= _enemy_damage
+pending_enemy_damage = obj_battle_enemy.data.damage * random_range(0.7, 1.2);
 
-enemy_turn = 0;
+waiting_for_qte = true;
 
-if (check_for_end())
-{
-    alarm[2] = 60;
-}
+scr_qte_start(obj_qte_wheel, 1);
