@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"QTE",
-    "path":"folders/Objects/QTE.yy",
+    "path":"folders/Objects/BattleManager/MainFunctions/QTE.yy",
   },
   "parentObjectId":null,
   "persistent":false,

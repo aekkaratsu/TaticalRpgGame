@@ -16,4 +16,4 @@ function scr_qte_start(_obj, _diff)
     }
 
     show_debug_message("QTE STARTED");
-
+}
