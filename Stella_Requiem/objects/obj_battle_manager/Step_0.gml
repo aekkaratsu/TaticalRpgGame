@@ -22,3 +22,5 @@ if (waiting_for_qte) {
         }
     }
 }
+    
+    
