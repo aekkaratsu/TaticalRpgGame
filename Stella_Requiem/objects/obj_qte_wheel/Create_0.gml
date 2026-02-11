@@ -1,3 +1,4 @@
+//HELP
 // เริ่มต้น
 angle = irandom(359);
 
