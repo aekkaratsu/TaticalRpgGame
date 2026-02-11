@@ -1,19 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_battle_manager",
+  "%Name":"obj_qte_controller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_battle_manager",
+  "name":"obj_qte_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"MainFunctions",
-    "path":"folders/Objects/BattleManager/MainFunctions.yy",
+    "name":"QTE",
+    "path":"folders/Objects/BattleManager/MainFunctions/QTE.yy",
   },
   "parentObjectId":null,
   "persistent":false,
