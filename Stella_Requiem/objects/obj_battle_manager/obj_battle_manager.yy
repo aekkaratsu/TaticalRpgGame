@@ -12,8 +12,8 @@
   "name":"obj_battle_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"MainFunctions",
-    "path":"folders/Objects/BattleManager/MainFunctions.yy",
+    "name":"Battle",
+    "path":"folders/Objects/Battle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
