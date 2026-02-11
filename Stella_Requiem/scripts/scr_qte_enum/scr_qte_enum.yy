@@ -7,6 +7,7 @@
   "parent":{
     "name":"QTE",
     "path":"folders/Objects/BattleManager/MainFunctions/QTE.yy",
+    "path":"folders/Objects/QTE.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

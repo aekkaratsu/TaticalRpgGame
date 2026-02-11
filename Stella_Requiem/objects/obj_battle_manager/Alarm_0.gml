@@ -7,9 +7,9 @@ if(check_for_end()) {
     obj_battle_enemy.alarm[0] = 30; // animation enemy get attacked
 }
 
-//increse charge
-obj_battle_player.data.charge += 0.4;
-if (obj_battle_player.data.charge > 1)
-{
-    obj_battle_player.data.charge = 1;
+if(check_for_end()) {
+    alarm[2] = 60;
+} else {
+    alarm[1] = 60;
 }
+

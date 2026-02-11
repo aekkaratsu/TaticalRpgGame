@@ -1,12 +1,11 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_qte_start",
+  "%Name":"scr_qte_enum",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_qte_start",
+  "name":"scr_qte_enum",
   "parent":{
     "name":"QTE",
-    "path":"folders/Objects/BattleManager/MainFunctions/QTE.yy",
     "path":"folders/Objects/QTE.yy",
   },
   "resourceType":"GMScript",

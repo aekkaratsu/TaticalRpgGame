@@ -11,6 +11,7 @@
   "parent":{
     "name":"QTE",
     "path":"folders/Objects/BattleManager/MainFunctions/QTE.yy",
+    "path":"folders/Objects/QTE.yy",
   },
   "parentObjectId":null,
   "persistent":false,

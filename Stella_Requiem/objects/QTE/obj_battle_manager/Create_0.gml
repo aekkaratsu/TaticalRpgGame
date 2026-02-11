@@ -4,7 +4,7 @@ damage_to_enemy = 0;
 pending_enemy_damage = 0;
 waiting_for_qte = false;
 
-player_attack = function (_damage) 
+player_attack = function(_damage)
 {
     damage_to_enemy = _damage;
     enemy_turn = 1;
