@@ -23,7 +23,7 @@
     {"$GMFolder":"","%Name":"InteractiveItems","folderPath":"folders/Objects/InteractiveObject/InteractiveItems.yy","name":"InteractiveItems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Structure","folderPath":"folders/Objects/InteractiveObject/Structure.yy","name":"Structure","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"InventorySystem","folderPath":"folders/Objects/InventorySystem.yy","name":"InventorySystem","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"QTE","folderPath":"folders/Objects/QTE.yy","name":"QTE","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"QTE","folderPath":"folders/Objects/BattleManager/MainFunctions/QTE.yy","name":"QTE","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"SpritePro","folderPath":"folders/SpritePro.yy","name":"SpritePro","resourceType":"GMFolder","resourceVersion":"2.0",},

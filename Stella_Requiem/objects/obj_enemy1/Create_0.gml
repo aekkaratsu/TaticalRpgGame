@@ -1,7 +1,6 @@
 // Initialize
 target_x = x;
 target_y = y;
-difficulty = 3;
 
 alarm[0] = 60;
 

@@ -9,8 +9,8 @@
   "name":"obj_attack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"QTE",
+    "path":"folders/Objects/BattleManager/MainFunctions/QTE.yy",
   },
   "parentObjectId":null,
   "persistent":false,
