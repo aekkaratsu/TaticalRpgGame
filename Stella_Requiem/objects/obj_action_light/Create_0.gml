@@ -1,8 +1,11 @@
-action = function ()
+action = function() 
 {
-    // When clicked set these Instances alpha to 1
-    with (obj_atkpart_1) {image_alpha = 1;}
-    with (obj_atkpart_2) {image_alpha = 1;}
-    with (obj_atkpart_3) {image_alpha = 1;}
-    with (obj_atkpart_cancel) {image_alpha = 1;}
+    // สั่งปุ่มลูกทุกตัวให้ตื่น!
+    with (obj_atkbyparts_parent_) {
+        // ตั้งค่าให้เป็น 1 เพื่อให้มันผ่านเงื่อนไข "if image_alpha <= 0 exit" ใน Step Event ได้
+        image_alpha = 1; 
+        
+        // (เทคนิค) ถ้าเป็นปุ่มชิ้นส่วนที่แตกไปแล้ว เดี๋ยว Step Event รอบถัดไป
+        // มันจะปรับลงเหลือ 0.2 ให้เองทันที ไม่ต้องห่วง
+    }
 }

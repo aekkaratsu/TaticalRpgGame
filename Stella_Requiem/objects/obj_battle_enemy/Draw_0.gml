@@ -1,12 +1,10 @@
-// For Drawing Enemy sprite Delete it if you want to see how its work
+//hp bar
+draw_self();
 
-draw_self(); 
+var _x = xstart - 20;
+var _y = ystart + 30;
+var _w = 40;
+var _h = 8;
 
-
-
-// Enemy HP bar
-
-// < CODE HERE > //
-
-// Kantinan Taking on this
-// Hint : Using the draw_functions likes : draw_sprite_strectched() or draw_sprite_strectched_ext()
+draw_sprite_stretched(spr_box, 0, _x, _y, _w, _h);
+draw_sprite_stretched_ext(spr_box, 1, _x, _y, _w * (data.hp / data.hp_total), _h, c_red, 1);

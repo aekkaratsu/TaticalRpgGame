@@ -1,19 +1,24 @@
 var _target_zoom = 1;
 
-if (force_zoom || keyboard_check(vk_space) || (instance_exists(obj_battle_manager) && obj_battle_manager.enemy_turn)) 
+// [FIX 1] Check if enemy exists BEFORE trying to follow or zoom logic
+// This prevents the camera from trying to focus on a dead enemy
+var _enemy_alive = instance_exists(follow_enemy);
+
+if (_enemy_alive && (force_zoom || keyboard_check(vk_space) || (instance_exists(obj_battle_manager) && obj_battle_manager.enemy_turn))) 
 {
     follow = follow_enemy; 
     _target_zoom = 0.75; // Zoom in when obj_camera follows the obj_battle_enemy
 } 
 else 
-{
-    
+{ 
     follow = obj_camera_center; 
     _target_zoom = 1; // Zoom out when obj_camera follows the obj_camera_center
 }
 
 
-if (follow != noone)
+// [FIX 2] Changed from "follow != noone" to "instance_exists(follow)"
+// This ensures we don't try to get .x or .y from a destroyed object
+if (instance_exists(follow))
 {
     xTo = follow.x;
     yTo = follow.y;

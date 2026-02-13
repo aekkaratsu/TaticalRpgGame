@@ -1,13 +1,17 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemy1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_enemy1",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"hp","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"RoamingEntities",
+    "path":"folders/Objects/RoamingEntities.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_parent",
