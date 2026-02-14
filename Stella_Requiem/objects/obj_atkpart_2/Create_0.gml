@@ -1,3 +1,4 @@
+part_target_name = "BODY";
 image_alpha = 0
 
 action =  function ()
@@ -7,8 +8,8 @@ action =  function ()
     {
         return; // Exit from function
     }
-    
-    obj_battle_manager.player_attack(obj_battle_player.data.damage * 1) // Modify in childrens
+    var _dmg = obj_battle_player.data.damage * 1;
+     obj_battle_manager.player_attack_part(_dmg, part_target_name); // Modify in childrens
      // Set Force zoom = false in the obj camera
      if (instance_exists(obj_camera)) 
     {

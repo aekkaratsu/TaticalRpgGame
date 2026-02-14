@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_action_heavy",
+  "%Name":"obj_break_effect",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_action_heavy",
+  "name":"obj_break_effect",
   "overriddenProperties":[],
   "parent":{
-    "name":"Actions",
-    "path":"folders/Objects/BattleManager/Actions.yy",
+    "name":"Parts",
+    "path":"folders/Objects/BattleManager/AttackByParts/Parts.yy",
   },
-  "parentObjectId":{
-    "name":"obj_action_parent",
-    "path":"objects/obj_action_parent/obj_action_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_heavy",
-    "path":"sprites/spr_button_heavy/spr_button_heavy.yy",
+    "name":"spr_parts_explosion",
+    "path":"sprites/spr_parts_explosion/spr_parts_explosion.yy",
   },
   "spriteMaskId":null,
   "visible":true,
