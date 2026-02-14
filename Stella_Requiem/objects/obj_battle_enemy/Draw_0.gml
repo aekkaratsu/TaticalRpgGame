@@ -1,10 +1,33 @@
-//hp bar
-draw_self();
+// --- 1. Calculate Draw Position with Shake Effect ---
+// Apply a random offset to X and Y based on the 'shake' variable.
+// If 'shake' is 0, the position remains at (x, y).
+var _draw_x = x + random_range(-shake, shake);
+var _draw_y = y + random_range(-shake, shake);
 
-var _x = xstart - 20;
-var _y = ystart + 30;
-var _w = 40;
-var _h = 8;
-
-draw_sprite_stretched(spr_box, 0, _x, _y, _w, _h);
-draw_sprite_stretched_ext(spr_box, 1, _x, _y, _w * (data.hp / data.hp_total), _h, c_red, 1);
+// --- 2. Sprite Existence Check (Safety) ---
+// Ensure the object has a valid sprite assigned to prevent errors.
+if (sprite_index != -1) 
+{
+    // --- 3. Render Logic ---
+    if (flash > 0) 
+    {
+        // >> Flash State: Active (Hit Effect) <<
+        
+        // Enable GPU Fog to force the sprite to render as solid white.
+        gpu_set_fog(true, c_white, 0, 0);
+        
+        // Draw the sprite at the shaken position.
+        draw_sprite_ext(sprite_index, image_index, _draw_x, _draw_y, image_xscale, image_yscale, image_angle, c_white, 1);
+        
+        // Disable GPU Fog immediately to avoid affecting other objects.
+        gpu_set_fog(false, c_white, 0, 0);
+    } 
+    else 
+    {
+        // >> Normal State: Standard Rendering <<
+        
+        // Draw the sprite normally using the shaken coordinates (_draw_x, _draw_y).
+        // This ensures the enemy shakes even when not flashing white.
+        draw_sprite_ext(sprite_index, image_index, _draw_x, _draw_y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+    }
+}

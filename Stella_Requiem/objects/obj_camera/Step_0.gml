@@ -4,7 +4,7 @@ var _target_zoom = 1;
 // This prevents the camera from trying to focus on a dead enemy
 var _enemy_alive = instance_exists(follow_enemy);
 
-if (_enemy_alive && (force_zoom || keyboard_check(vk_space) || (instance_exists(obj_battle_manager) && obj_battle_manager.enemy_turn))) 
+if (_enemy_alive && (force_zoom || keyboard_check(ord("Z")) || (instance_exists(obj_battle_manager) && obj_battle_manager.enemy_turn))) 
 {
     follow = follow_enemy; 
     _target_zoom = 0.75; // Zoom in when obj_camera follows the obj_battle_enemy

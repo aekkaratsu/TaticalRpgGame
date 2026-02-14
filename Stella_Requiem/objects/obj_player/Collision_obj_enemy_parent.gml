@@ -2,6 +2,7 @@
 
 if (instance_exists(obj_dialog)) exit;
 if (instance_exists(obj_battle_switcher)) exit;
+
     
 var _switcher = instance_create_depth(0, 0, 0, obj_battle_switcher);
 

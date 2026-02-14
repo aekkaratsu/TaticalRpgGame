@@ -9,8 +9,19 @@ player_attack = function(_damage)
 {
     // Safety check: ensure enemy exists
     if (instance_exists(obj_battle_enemy)) {
+        // 1. ลดเลือด
         obj_battle_enemy.hp -= _damage;
+        
+        // 2. สั่งให้กระพริบ
         obj_battle_enemy.flash = 5;
+        
+        // 3. [เพิ่มบรรทัดนี้] สั่งให้เขย่า (Shake)
+        obj_battle_enemy.shake = 8; // ใส่เลขความแรงตามใจชอบ (เช่น 5 ถึง 10)
+        
+        // 4. อัปเดตข้อมูลเพื่อให้หลอดเลือดขยับ (ที่แก้ไปเมื่อกี้)
+        if (variable_instance_exists(obj_battle_enemy, "data")) {
+            obj_battle_enemy.data.hp = obj_battle_enemy.hp;
+        }
     }
     
     // Switch to enemy turn after 1 second

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_action_heavy",
+  "%Name":"obj_action_attack",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_action_heavy",
+  "name":"obj_action_attack",
   "overriddenProperties":[],
   "parent":{
     "name":"Actions",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_heavy",
-    "path":"sprites/spr_button_heavy/spr_button_heavy.yy",
+    "name":"spr_button_attack",
+    "path":"sprites/spr_button_attack/spr_button_attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -22,7 +22,8 @@ hp_total = data.hp_total;
 accuracy = 1.0; 
 defense = 0;    
 evasion = 0;    
-flash = 0;      
+flash = 0;
+shake = 0;    
 
 // --- UI Settings ---
 max_charge_dots = 10; // Total segments for the Charge gauge
@@ -78,7 +79,7 @@ receive_part_break = function(_part_name)
         case "HEAD":
             accuracy = 0.5;   
             _vital_dmg = 50;
-            _charge_gain = 0.5; // High reward for vivid point
+            _charge_gain = 0.8; // High reward for vivid point
             break;
         case "BODY":
             defense = 0;      
