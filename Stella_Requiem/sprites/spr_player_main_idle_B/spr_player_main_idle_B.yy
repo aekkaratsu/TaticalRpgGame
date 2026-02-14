@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"SpritePro",
-    "path":"folders/SpritePro.yy",
+    "name":"player",
+    "path":"folders/SpriteProject/player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
