@@ -33,19 +33,19 @@ item_database[0] = {
 
 item_database[1] = {
     name : "Egg",
-    desc : "Just an egg. ( + 20 HP )",
+    desc : "Just an egg. ( + 1 HP )",
     sprite : spr_item_2,
     effect : function() {
         if (instance_exists(obj_battle_player)) {
             // Add Hp to player
-            obj_battle_player.data.hp += 20;
+            obj_battle_player.data.hp += 1;
             
             // Prevent overloaded HP
             if (obj_battle_player.data.hp > obj_battle_player.data.hp_total) {
                 obj_battle_player.data.hp = obj_battle_player.data.hp_total;
             }
             
-            show_debug_message("Healed 20 HP!");
+            show_debug_message("Healed 1 HP!");
             
     }
 }
