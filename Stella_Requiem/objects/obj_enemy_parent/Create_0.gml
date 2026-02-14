@@ -40,5 +40,15 @@ enemy_parts = [
         offset_y: 20,
         is_weakness: false,
         break_effect: "SLOW"
+    },
+    {
+        name: "DICK",
+        hp: 2,
+        hp_max: 1,
+        offset_x: 0,
+        offset_y: 20,
+        is_weakness: false,
+        break_effect: "SLOW",
+        difficulty: 1
     }
 ];

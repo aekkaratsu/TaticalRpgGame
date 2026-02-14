@@ -48,7 +48,7 @@ if (variable_struct_exists(data, "enemy_parts")) {
         _part.offset_x = _p_info.offset_x;
         _part.offset_y = _p_info.offset_y;
         
-        // Assign sprites based on part name
+        // Assign sprites based on part name **HERE KANTINUN**
         switch (_p_info.name) {
             case "HEAD": _part.sprite_index = spr_player_idle_down; break;
             case "BODY": _part.sprite_index = spr_player_main_idle_B; break;
