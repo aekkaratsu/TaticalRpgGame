@@ -12,33 +12,51 @@ kb_y = 0;
 
 hp_total = hp;
 
-// Default parts
+// Default parts You can set the position HERE
 enemy_parts = [
     {
-        name: "HEAD",
+        name: "LEGS",
         hp: 2,
         hp_max: 2,
         offset_x: 20,
         offset_y: -30, 
         is_weakness: true,
-        break_effect: "ACCURACY_DOWN" 
-    },
-    {
-        name: "BODY",
-        hp: 2,
-        hp_max: 2,
-        offset_x: -20,
-        offset_y: -30,
-        is_weakness: false,
-        break_effect: "DEFENSE_DOWN"
+        break_effect: "SLOW" 
     },
     {
         name: "LEGS",
         hp: 2,
         hp_max: 2,
         offset_x: -20,
-        offset_y: 20,
+        offset_y: -30,
         is_weakness: false,
         break_effect: "SLOW"
-    }
+    },
+    {
+        name: "LEGS",
+        hp: 2,
+        hp_max: 2,
+        offset_x: -20,
+        offset_y: -60,
+        is_weakness: false,
+        break_effect: "SLOW"
+    },
+    {
+        name: "LEGS",
+        hp: 2,
+        hp_max: 2,
+        offset_x: 30,
+        offset_y: -60,
+        is_weakness: false,
+        break_effect: "SLOW"
+    }, 
+    {
+        name: "HEAD",
+        hp: 2,
+        hp_max: 2,
+        offset_x: 0,
+        offset_y: -35, 
+        is_weakness: true,
+        break_effect: "ACCURACY_DOWN" 
+    },
 ];
