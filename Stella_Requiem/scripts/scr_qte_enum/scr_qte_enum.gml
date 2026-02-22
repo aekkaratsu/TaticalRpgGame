@@ -4,3 +4,10 @@ enum QTE_STATE {
     SUCCESS,
     FAIL
 }
+
+enum MATH_STATE {
+    IDLE,
+    PLAYING,
+    SUCCESS,
+    FAIL
+}

@@ -12,8 +12,16 @@ switch (state)
 
 
     case QTE_STATE.SUCCESS:
+        if(instance_exists(qte_object))
+        {
+            with (qte_object) instance_destroy();
+        }
+        global.qte_result = result;
+        scr_math_parry_start(difficulty);
+        state = QTE_STATE.IDLE;
+        break;
+        
     case QTE_STATE.FAIL:
-
         if (instance_exists(qte_object))
         {
             with (qte_object) instance_destroy();
