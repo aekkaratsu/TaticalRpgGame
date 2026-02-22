@@ -1,4 +1,11 @@
 {
-  "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Sound","order":1,"path":"folders/Sound.yy",},
+    {"name":"Battle","order":1,"path":"folders/Sound/Battle.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"snd_correct","order":1,"path":"sounds/snd_correct/snd_correct.yy",},
+    {"name":"snd_incorrect","order":2,"path":"sounds/snd_incorrect/snd_incorrect.yy",},
+    {"name":"spr_parts_4","order":1,"path":"sprites/spr_parts_4/spr_parts_4.yy",},
+  ],
 }

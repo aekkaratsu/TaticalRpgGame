@@ -4,21 +4,22 @@ damage_to_enemy = 0;        // Damage value to be dealt
 pending_enemy_damage = 0;   // Cached damage for processing
 waiting_for_qte = false;    // Quick Time Event flag
 
+
 // --- Standard Attack Function (Main Body) ---
 player_attack = function(_damage)
 {
     // Safety check: ensure enemy exists
     if (instance_exists(obj_battle_enemy)) {
-        // 1. ลดเลือด
+        //  -hp
         obj_battle_enemy.hp -= _damage;
         
-        // 2. สั่งให้กระพริบ
+        // สั่งให้กระพริบ
         obj_battle_enemy.flash = 5;
         
-        // 3. [เพิ่มบรรทัดนี้] สั่งให้เขย่า (Shake)
-        obj_battle_enemy.shake = 8; // ใส่เลขความแรงตามใจชอบ (เช่น 5 ถึง 10)
+        // shake
+        obj_battle_enemy.shake = 8;
         
-        // 4. อัปเดตข้อมูลเพื่อให้หลอดเลือดขยับ (ที่แก้ไปเมื่อกี้)
+        // update the changed data
         if (variable_instance_exists(obj_battle_enemy, "data")) {
             obj_battle_enemy.data.hp = obj_battle_enemy.hp;
         }

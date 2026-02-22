@@ -1,4 +1,4 @@
-// --- 1. Data Retrieval (Cross-scene memory) ---
+// ---  Data Retrieval (Cross-scene memory) ---
 if (instance_exists(obj_battle_switcher)) {
     data = obj_battle_switcher.enemy_data; 
     
@@ -12,23 +12,21 @@ if (instance_exists(obj_battle_switcher)) {
     if (!variable_instance_exists(id, "player_charge")) player_charge = 0; 
 }
 
-// --- 2. Base Stats ---
+// --- Base Stats ---
 sprite_index = data.sprite_index;
 hp = data.hp;
 damage = data.damage;
 hp_total = data.hp_total;
 
 // --- 3. Battle Stats ---
-accuracy = 1.0; 
-defense = 0;    
-evasion = 0;    
+   
 flash = 0;
 shake = 0;    
 
 // --- UI Settings ---
 max_charge_dots = 10; // Total segments for the Charge gauge
 
-// --- 4. Part Generation (Persistent Break System) ---
+// --- Part Generation (Persistent Break System) ---
 parts_instances = []; 
 
 if (variable_struct_exists(data, "enemy_parts")) {
@@ -48,11 +46,11 @@ if (variable_struct_exists(data, "enemy_parts")) {
         _part.offset_x = _p_info.offset_x;
         _part.offset_y = _p_info.offset_y;
         
-        // Assign sprites based on part name **HERE KANTINUN**
+        // Switch case for set sprite index
         switch (_p_info.name) {
-            case "HEAD": _part.sprite_index = spr_player_idle_down; break;
-            case "BODY": _part.sprite_index = spr_player_main_idle_B; break;
-            case "LEGS": _part.sprite_index = spr_trash; break;
+            case "HEAD": _part.sprite_index = spr_parts_1; break;
+            case "BODY": _part.sprite_index = spr_parts_2; break;
+            case "LEGS": _part.sprite_index = spr_parts_3; break;
             default:     _part.sprite_index = sprite_index; break;
         }
         
@@ -64,9 +62,9 @@ if (variable_struct_exists(data, "enemy_parts")) {
     }
 }
 
-// =========================================================
+
 // FUNCTION: Handle Part Destruction
-// =========================================================
+
 receive_part_break = function(_part_name) 
 {
     show_debug_message("--- PART BROKEN: " + string(_part_name) + " ---");
@@ -112,10 +110,10 @@ receive_part_break = function(_part_name)
         if (obj_battle_switcher.player_data.charge > 1.0) obj_battle_switcher.player_data.charge = 1.0;
         
         // Save part status as destroyed (HP = 0)
-        var _bp = obj_battle_switcher.enemy_data.enemy_parts;
-        for (var i = 0; i < array_length(_bp); i++) {
-            if (_bp[i].name == _part_name) {
-                _bp[i].hp = 0; 
+        var _brokenparts = obj_battle_switcher.enemy_data.enemy_parts;
+        for (var i = 0; i < array_length(_brokenparts); i++) {
+            if (_brokenparts[i].name == _part_name) {
+                _brokenparts[i].hp = 0; 
                 break;
             }
         }
