@@ -4,6 +4,10 @@ damage_to_enemy = 0;
 pending_enemy_damage = 0;
 waiting_for_qte = false;
 
+processing_math = false;
+global.math_result = -1; //unfinish
+
+
 player_attack = function(_damage)
 {
     damage_to_enemy = _damage;
