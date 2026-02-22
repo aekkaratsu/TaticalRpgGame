@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"tile",
-    "path":"folders/SpritePro/tile.yy",
+    "path":"folders/SpriteProject/tile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
