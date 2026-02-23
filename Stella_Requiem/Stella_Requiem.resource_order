@@ -4,6 +4,7 @@
     {"name":"Photo","order":1,"path":"folders/Photo.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_btn_mute","order":3,"path":"objects/obj_btn_mute/obj_btn_mute.yy",},
     {"name":"obj_btn_start","order":1,"path":"objects/obj_btn_start/obj_btn_start.yy",},
     {"name":"obj_video_draw","order":2,"path":"objects/obj_video_draw/obj_video_draw.yy",},
     {"name":"TitleScreen","order":1,"path":"rooms/TitleScreen/TitleScreen.yy",},
@@ -14,6 +15,7 @@
     {"name":"snd_qte_fail","order":4,"path":"sounds/snd_qte_fail/snd_qte_fail.yy",},
     {"name":"snd_qte_succes","order":5,"path":"sounds/snd_qte_succes/snd_qte_succes.yy",},
     {"name":"snd_titlescreen","order":1,"path":"sounds/snd_titlescreen/snd_titlescreen.yy",},
+    {"name":"photo_mutebutton","order":2,"path":"sprites/photo_mutebutton/photo_mutebutton.yy",},
     {"name":"photo_startbutton","order":1,"path":"sprites/photo_startbutton/photo_startbutton.yy",},
   ],
 }
