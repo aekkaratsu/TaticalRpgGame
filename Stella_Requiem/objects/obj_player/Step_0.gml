@@ -2,7 +2,7 @@
 if(instance_exists(obj_dialog)) exit;
 if (obj_inventory.show_inventory = true) exit;
     
-// Check Input
+// Check Input chage the ord to the numbers 1 , 0 ,-1
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
@@ -10,16 +10,18 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [titlemap], undefined, un
 
 // Use condition to change sprites
 if (_hor != 0 or _ver != 0)
-{
+{   
+    audio_play_sound(snd_player_walk,1,false);
     if (_ver > 0) sprite_index = spr_player_main_walk_F;
     else if (_ver < 0) sprite_index = spr_player_main_walk_B;
     else if (_hor > 0) sprite_index = spr_player_main_walk_R;
     else if (_hor < 0) sprite_index = spr_player_main_walk_L; 
         
     facing = point_direction(0, 0, _hor, _ver);
+    
 } 
 else //not moving
-{
+{   audio_stop_sound(snd_player_walk)
     //Logic is checking player is moving which direction and then set to idle
     // == for compare, = for set value
 	if (sprite_index == spr_player_main_walk_R) sprite_index = spr_player_main_idle_R;
