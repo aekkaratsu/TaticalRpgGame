@@ -5,14 +5,14 @@ pending_enemy_damage = 0;   // Cached damage for processing
 waiting_for_qte = false;    // Quick Time Event flag
 
 
-<<<<<<< feature/Math
+
 processing_math = false;
 global.math_result = -1; //unfinish
 
 
-=======
+
 // --- Standard Attack Function (Main Body) ---
->>>>>>> main
+
 player_attack = function(_damage)
 {
     // Safety check: ensure enemy exists
