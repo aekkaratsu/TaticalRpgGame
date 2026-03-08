@@ -38,3 +38,6 @@ function add_xp (_xp_to_add)
         ])
     }    
 }
+
+audio_play_sound(snd_player_walk_eak,1,true);
+audio_pause_sound(snd_player_walk_eak);

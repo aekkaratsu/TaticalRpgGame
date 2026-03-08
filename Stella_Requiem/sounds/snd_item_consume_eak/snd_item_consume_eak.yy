@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_qte_fail",
+  "%Name":"snd_item_consume_eak",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.2266667,
+  "duration":1.0666667,
   "exportDir":"",
-  "name":"snd_qte_fail",
+  "name":"snd_item_consume_eak",
   "parent":{
     "name":"Battle",
     "path":"folders/Sound/Battle.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_qte_fail.mp3",
+  "soundFile":"snd_item_consume_eak.mp3",
   "volume":1.0,
 }

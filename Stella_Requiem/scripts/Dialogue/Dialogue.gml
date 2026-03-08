@@ -50,7 +50,7 @@ stu_trash_dia1 = [
 
 {
     name:"Narrator",
-    msg:"What the FUCK is this shit?"
+    msg:"What the is this?"
 }
 ]
 

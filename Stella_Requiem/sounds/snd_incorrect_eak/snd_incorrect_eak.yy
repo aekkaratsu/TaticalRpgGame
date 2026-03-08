@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.9306803,
+  "duration":1.2266667,
   "exportDir":"",
   "name":"snd_incorrect_eak",
   "parent":{

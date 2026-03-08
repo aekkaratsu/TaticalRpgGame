@@ -1,8 +1,10 @@
+// Toggle Inventory
 if (keyboard_check_pressed(ord("I"))) {
     show_inventory = !show_inventory; 
 }
 
-// Add item id
+// --- For Debug ---
+// Add item via id 
 if (keyboard_check_pressed(ord("E"))) 
 {
     var success = InventoryAdd(id, 1); // Sent id as rootObject in the InventoryFunction
@@ -14,7 +16,7 @@ if (keyboard_check_pressed(ord("E")))
     }
 }
 
-// D Remove item id 1 by 1 piece
+// D Remove item via id 
 if (keyboard_check_pressed(ord("R"))) 
 {
     InventoryRemove(id, 0); 

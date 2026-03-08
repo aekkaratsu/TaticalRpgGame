@@ -1,14 +1,14 @@
-// 1. Calculate Draw Position with Shake Effect
+// Calculate Draw Position with Shake Effect
 // Apply a random offset to X and Y based on the 'shake' variable.
 // If 'shake' is 0, the position remains at (x, y).
 var _draw_x = x + random_range(-shake, shake);
 var _draw_y = y + random_range(-shake, shake);
 
-// 2. Sprite Existence Check
+// --- Sprite Existence Check ---
 // Ensure the object has a valid sprite assigned to prevent errors.
 if (sprite_index != -1) 
 {
-    // --- 3. Render Logic ---
+    // ---  Render Logic ---
     if (flash > 0) 
     {
         //Flash StateHit Effect

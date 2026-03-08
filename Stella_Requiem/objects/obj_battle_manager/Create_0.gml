@@ -15,6 +15,7 @@ global.math_result = -1; //unfinish
 
 player_attack = function(_damage)
 {
+    audio_play_sound(snd_shock,10,false);
     // Safety check: ensure enemy exists
     if (instance_exists(obj_battle_enemy)) {
         //  -hp
@@ -50,6 +51,7 @@ check_for_end = function() {
 // Called by specific part-attack buttons (e.g., HEAD, BODY, LEGS)
 player_attack_part = function(_damage, _target_name) 
 {
+    audio_play_sound(snd_shock,10,false)
     // 1. Safety check for enemy existence
     if (!instance_exists(obj_battle_enemy)) {
         show_debug_message("Error: Enemy instance not found.");
@@ -58,7 +60,7 @@ player_attack_part = function(_damage, _target_name)
 
     var _enemy = obj_battle_enemy; 
     
-    // 2. Fallback: If enemy has no parts array, attack main body
+    // Handle if enemy have no part attack body instead 
     if (!variable_instance_exists(_enemy, "parts_instances")) {
          show_debug_message("Warning: parts_instances missing. Attacking body.");
          _enemy.hp -= _damage;

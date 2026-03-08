@@ -8,10 +8,11 @@ var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 move_and_collide(_hor * move_speed, _ver * move_speed, [titlemap], undefined, undefined, undefined, move_speed, move_speed);//title(Titles_Col) for prevent player go through the walls
 
+ 
 // Use condition to change sprites
 if (_hor != 0 or _ver != 0)
 {   
-    audio_play_sound(snd_player_walk,1,false);
+    audio_resume_sound(snd_player_walk_eak);
     if (_ver > 0) sprite_index = spr_player_main_walk_F;
     else if (_ver < 0) sprite_index = spr_player_main_walk_B;
     else if (_hor > 0) sprite_index = spr_player_main_walk_R;
@@ -21,7 +22,7 @@ if (_hor != 0 or _ver != 0)
     
 } 
 else //not moving
-{   audio_stop_sound(snd_player_walk)
+{   audio_pause_sound(snd_player_walk_eak);
     //Logic is checking player is moving which direction and then set to idle
     // == for compare, = for set value
 	if (sprite_index == spr_player_main_walk_R) sprite_index = spr_player_main_idle_R;

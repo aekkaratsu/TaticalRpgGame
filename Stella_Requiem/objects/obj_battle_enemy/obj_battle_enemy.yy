@@ -13,8 +13,8 @@
   "name":"obj_battle_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entities",
-    "path":"folders/Objects/BattleManager/Entities.yy",
+    "name":"MainFunctions",
+    "path":"folders/Objects/BattleManager/MainFunctions.yy",
   },
   "parentObjectId":null,
   "persistent":false,
