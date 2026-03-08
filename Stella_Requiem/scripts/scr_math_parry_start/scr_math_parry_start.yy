@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_math_parry_start",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_math_parry_start",
+  "parent":{
+    "name":"MATH",
+    "path":"folders/Objects/BattleManager/MainFunctions/MATH.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

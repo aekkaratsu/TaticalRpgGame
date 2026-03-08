@@ -11,4 +11,5 @@ _switcher.player_data = self;
 _switcher.enemy_data = other; // Structs
 _switcher.original_room = room;
 
+audio_pause_sound(snd_player_walk_eak)
 room_goto(rm_battle);

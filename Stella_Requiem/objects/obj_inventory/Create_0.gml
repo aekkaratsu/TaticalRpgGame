@@ -6,16 +6,15 @@ randomize();
 //inventory[0] = 1;
 show_inventory = false; // Set Deafault
 
-
-
 // -- Item Database -- //
 item_database = [] // Create Array
 
-// Use the same format below.
+// Use the same format below for next items
 item_database[0] = {
     name : "???",
     desc : "Happy Birth Day!",
     sprite : spr_item_1,
+    sound : snd_item_consume_docs_eak,
     effect : function() {
         if (instance_exists(obj_battle_player)) {
             // Add Charge to player
@@ -35,6 +34,7 @@ item_database[1] = {
     name : "Egg",
     desc : "Just an egg. ( + 1 HP )",
     sprite : spr_item_2,
+    sound : snd_item_consume_eak,
     effect : function() {
         if (instance_exists(obj_battle_player)) {
             // Add Hp to player

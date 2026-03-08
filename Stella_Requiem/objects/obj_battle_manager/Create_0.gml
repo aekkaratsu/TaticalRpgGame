@@ -4,21 +4,30 @@ damage_to_enemy = 0;        // Damage value to be dealt
 pending_enemy_damage = 0;   // Cached damage for processing
 waiting_for_qte = false;    // Quick Time Event flag
 
+
+
+processing_math = false;
+global.math_result = -1; //unfinish
+
+
+
 // --- Standard Attack Function (Main Body) ---
+
 player_attack = function(_damage)
 {
+    audio_play_sound(snd_shock,10,false);
     // Safety check: ensure enemy exists
     if (instance_exists(obj_battle_enemy)) {
-        // 1. ลดเลือด
+        //  -hp
         obj_battle_enemy.hp -= _damage;
         
-        // 2. สั่งให้กระพริบ
+        // สั่งให้กระพริบ
         obj_battle_enemy.flash = 5;
         
-        // 3. [เพิ่มบรรทัดนี้] สั่งให้เขย่า (Shake)
-        obj_battle_enemy.shake = 8; // ใส่เลขความแรงตามใจชอบ (เช่น 5 ถึง 10)
+        // shake
+        obj_battle_enemy.shake = 8;
         
-        // 4. อัปเดตข้อมูลเพื่อให้หลอดเลือดขยับ (ที่แก้ไปเมื่อกี้)
+        // update the changed data
         if (variable_instance_exists(obj_battle_enemy, "data")) {
             obj_battle_enemy.data.hp = obj_battle_enemy.hp;
         }
@@ -42,6 +51,7 @@ check_for_end = function() {
 // Called by specific part-attack buttons (e.g., HEAD, BODY, LEGS)
 player_attack_part = function(_damage, _target_name) 
 {
+    audio_play_sound(snd_shock,10,false)
     // 1. Safety check for enemy existence
     if (!instance_exists(obj_battle_enemy)) {
         show_debug_message("Error: Enemy instance not found.");
@@ -50,7 +60,7 @@ player_attack_part = function(_damage, _target_name)
 
     var _enemy = obj_battle_enemy; 
     
-    // 2. Fallback: If enemy has no parts array, attack main body
+    // Handle if enemy have no part attack body instead 
     if (!variable_instance_exists(_enemy, "parts_instances")) {
          show_debug_message("Warning: parts_instances missing. Attacking body.");
          _enemy.hp -= _damage;

@@ -1,7 +1,7 @@
-// --- 1. Check Visibility ---
-if (!show_inventory) exit; // If inventory is hidden, stop drawing immediately.
+//  Check Visibility 
+if (!show_inventory) exit; // Error handle
 
-// --- 2. Setup Dimensions & Position ---
+//  Setup Dimensions & Position 
 // Get screen size
 var gui_w = display_get_gui_width();
 var gui_h = display_get_gui_height();
@@ -23,7 +23,7 @@ inv_height += 12;
 var start_x = (gui_w / 2) - (inv_width / 2); // Keep Horizontal Center
 var start_y = 20;       // Align to top(with 20px margin)
 
-// --- 3. Draw Background ---
+// --- Draw Background ---
 draw_sprite_stretched(
     spr_inventory_box, 
     0, 
@@ -37,7 +37,7 @@ draw_sprite_stretched(
 var x_offset = start_x + 6;
 var y_offset = start_y + 6;
 
-// --- 4. Loop Through Slots ---
+// --- Loop Through Slots ---
 var mous_x = device_mouse_x_to_gui(0); 
 var mous_y = device_mouse_y_to_gui(0);
 var hover_item_id = -1; // Reset hover ID
@@ -48,10 +48,10 @@ for (var i = 0; i < INVENTORY_SOLTS; i += 1)
     var xx = x_offset + (i mod rowLength) * (slot_size + slot_pad);
     var yy = y_offset + (i div rowLength) * (slot_size + slot_pad);
     
-    // 4.1 Draw Slot Background
+    // --- Draw Slot Background ---
     draw_sprite_stretched(spr_inventory_slot, 0, xx, yy, slot_size, slot_size);
     
-    // 4.2 Draw Item Sprite (If item exists)
+    // --- Draw Item Sprite (If item exists) ---
     if (inventory[i] != -1)
     {
         var _item_id = inventory[i];
@@ -64,7 +64,7 @@ for (var i = 0; i < INVENTORY_SOLTS; i += 1)
         }
     }
 
-    // 4.3 Mouse Interaction (Hover & Click)
+    // --- Mouse Interaction (Hover & Click) ---
     if (mous_x > xx && mous_x < xx + slot_size && mous_y > yy && mous_y < yy + slot_size)
     {
         // Draw Outline (Hover Effect)
@@ -85,15 +85,22 @@ for (var i = 0; i < INVENTORY_SOLTS; i += 1)
                 hover_item_id = -1; // Clear hover to prevent ghost tooltip
             }
             
-            // --- Left Click: Use Item (NEW FEATURE) ---
+            // --- Left Click: Use Item  ---
             if (mouse_check_button_pressed(mb_left))
             {
-                var _db_item = item_database[inventory[i]];
+                var _datab_item = item_database[inventory[i]];
                 
-                // Check if this item has an 'effect' function
-                if (variable_struct_exists(_db_item, "effect")) 
+                // Check for sound
+                if (variable_struct_exists(_datab_item, "sound"))
                 {
-                    _db_item.effect(); // Execute the effect (e.g., Heal)
+                    var _sound = _datab_item.sound
+                    audio_play_sound(_sound,10,false);
+                }
+                
+                // Check for effect
+                if (variable_struct_exists(_datab_item, "effect")) 
+                {
+                    _datab_item.effect(); // Execute the effect (e.g., Heal)
                     
                     // Remove item after use (consumable)
                     inventory[i] = -1;
@@ -104,7 +111,7 @@ for (var i = 0; i < INVENTORY_SOLTS; i += 1)
     }
 }
 
-// --- 5. Draw Item Description (Tooltip) ---
+// --- Draw Item Description (Tooltip) ---
 if (hover_item_id != -1)
 {
     // Default values
