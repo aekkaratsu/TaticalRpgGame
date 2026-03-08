@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc3",
-  "eventList":[],
+  "%Name":"obj_map_switcher_town",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_npc3",
+  "name":"obj_map_switcher_town",
   "overriddenProperties":[],
   "parent":{
-    "name":"Friendly",
-    "path":"folders/Objects/Entities/Friendly.yy",
+    "name":"RoomSwitchers",
+    "path":"folders/Objects/RoomSwitchers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc",
-    "path":"sprites/spr_npc/spr_npc.yy",
+    "name":"spr_player_idle_down",
+    "path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

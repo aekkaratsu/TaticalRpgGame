@@ -12,8 +12,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
-    "name":"RoamingEntities",
-    "path":"folders/Objects/RoamingEntities.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Entities/Enemy.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_parent",

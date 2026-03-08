@@ -8,8 +8,8 @@
   "name":"obj_npc2",
   "overriddenProperties":[],
   "parent":{
-    "name":"RoamingEntities",
-    "path":"folders/Objects/RoamingEntities.yy",
+    "name":"Friendly",
+    "path":"folders/Objects/Entities/Friendly.yy",
   },
   "parentObjectId":{
     "name":"obj_npc_parent",
