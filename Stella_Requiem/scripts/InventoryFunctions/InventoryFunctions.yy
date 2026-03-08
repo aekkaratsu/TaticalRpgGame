@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"InventoryFunctions",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"InventorySystem",
+    "path":"folders/Objects/InventorySystem.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

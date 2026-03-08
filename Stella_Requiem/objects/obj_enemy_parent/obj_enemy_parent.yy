@@ -13,8 +13,8 @@
   "name":"obj_enemy_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"RoamingEntities",
-    "path":"folders/Objects/RoamingEntities.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Entities/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,
