@@ -1,4 +1,6 @@
 {
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[],
   "FolderOrderSettings":[
     {"name":"AttackByParts","order":1,"path":"folders/Objects/BattleManager/AttackByParts.yy",},
     {"name":"MainFunctions","order":2,"path":"folders/Objects/BattleManager/MainFunctions.yy",},
