@@ -32,7 +32,8 @@ if (global.math_result != -1)
     if (global.math_result == 0) {
         //math success
         audio_play_sound(snd_correct_eak,2,false)
-        obj_battle_manager.player_attack(obj_battle_player.data.damage);
+        obj_battle_manager.player_attack(10);
+        audio_play_sound(snd_shock,1,false);
     }
     
     else if (global.math_result == 1) {

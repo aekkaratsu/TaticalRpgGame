@@ -1,6 +1,5 @@
 // 1. Block input if it's the enemy's turn or button is hidden
 if (obj_battle_manager.enemy_turn || image_alpha <= 0) exit;
-    audio_play_sound(snd_shock,10,false)
 
 // 2. Block input if the button is dimmed (meaning the target part is destroyed)
 // We use < 0.9 to safely handle floating point precision

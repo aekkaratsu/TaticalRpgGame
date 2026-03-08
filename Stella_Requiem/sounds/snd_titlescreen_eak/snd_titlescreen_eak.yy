@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_player_walk",
+  "%Name":"snd_titlescreen_eak",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.4080045,
+  "duration":94.74134,
   "exportDir":"",
-  "name":"snd_player_walk",
+  "name":"snd_titlescreen_eak",
   "parent":{
-    "name":"Battle",
-    "path":"folders/Sound/Battle.yy",
+    "name":"Sound",
+    "path":"folders/Sound.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_player_walk.mp3",
-  "volume":0.15,
+  "soundFile":"snd_titlescreen_eak.mp3",
+  "volume":1.0,
 }

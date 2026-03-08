@@ -125,6 +125,7 @@ receive_part_break = function(_part_name)
     // 4. Death Check (Transition back to Overworld)
     if (hp <= 0) 
     {
+        audio_play_sound(snd_player_win,1,false);
         hp = 0;
         if (instance_exists(obj_battle_switcher)) {
             obj_battle_switcher.enemy_data.hp = 0;
