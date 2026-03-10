@@ -1,3 +1,7 @@
+if (room == rm_battle) {
+    exit;
+}
+
 // Draw directly in the room ( Top left )
 var _dx = 16;
 var _dy = 16;

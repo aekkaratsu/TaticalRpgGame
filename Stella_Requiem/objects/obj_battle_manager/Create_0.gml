@@ -1,108 +1,91 @@
-// --- Turn Management Variables ---
-enemy_turn = 0;             // 0 = Player's turn, 1 = Enemy's turn
-damage_to_enemy = 0;        // Damage value to be dealt
+// === Battle Management Variables ===
+enemy_turn = false;         // false = Player's turn, true = Enemy's turn
+damage_to_enemy = 0;        // Damage to be dealt
 pending_enemy_damage = 0;   // Cached damage for processing
 waiting_for_qte = false;    // Quick Time Event flag
 
-
-
+// === Math System Variables ===
 processing_math = false;
-global.math_result = -1; //unfinish
+global.math_result = -1;    // -1 indicates unfinished
 
 
-
-// --- Standard Attack Function (Main Body) ---
-
-player_attack = function(_damage)
-{
-    audio_play_sound(snd_shock,10,false);
-    // Safety check: ensure enemy exists
-    if (instance_exists(obj_battle_enemy)) {
-        //  -hp
-        obj_battle_enemy.hp -= _damage;
-        
-        // สั่งให้กระพริบ
-        obj_battle_enemy.flash = 5;
-        
-        // shake
-        obj_battle_enemy.shake = 8;
-        
-        // update the changed data
-        if (variable_instance_exists(obj_battle_enemy, "data")) {
-            obj_battle_enemy.data.hp = obj_battle_enemy.hp;
-        }
-    }
-    
-    // Switch to enemy turn after 1 second
-    enemy_turn = 1;
-    alarm[0] = 60;
+// === Helper Functions ===
+end_player_turn = function() {
+    enemy_turn = true;
+    alarm[0] = 60; // Delay before enemy attacks
 }
 
-// --- Check Battle End Conditions ---
+// Apply damage directly to the enemy's main body
+damage_main_body = function(_damage) {
+    if (instance_exists(obj_battle_enemy)) {
+        with (obj_battle_enemy) {
+            hp -= _damage;
+            flash = 5;
+            shake = 8;
+            
+            // Update persistent health data
+            if (variable_instance_exists(id, "data")) {
+                data.hp = hp;
+            }
+        }
+    }
+}
+
+
+// === Core Battle Functions ===
+
+// Check if the battle is over (returns true if someone died or is missing)
 check_for_end = function() {
-    // Return true if either side is missing or dead
-    if (!instance_exists(obj_battle_enemy)) return true; 
-    if (!instance_exists(obj_battle_player)) return true; 
+    if (!instance_exists(obj_battle_enemy) || !instance_exists(obj_battle_player)) {
+        return true; 
+    }
     
     return (obj_battle_enemy.hp <= 0 || obj_battle_player.data.hp <= 0);
 }
 
-// --- Targeted Part Attack Function ---
-// Called by specific part-attack buttons (e.g., HEAD, BODY, LEGS)
-player_attack_part = function(_damage, _target_name) 
-{
-    audio_play_sound(snd_shock,10,false)
-    // 1. Safety check for enemy existence
+// Standard attack on the main body
+player_attack = function(_damage) {
+    audio_play_sound(snd_shock, 10, false);
+    
+    damage_main_body(_damage);
+    end_player_turn();
+}
+
+// Attack a specific enemy part (e.g., "HEAD", "LEGS")
+player_attack_part = function(_damage, _target_name) {
+    audio_play_sound(snd_shock, 10, false);
+    
     if (!instance_exists(obj_battle_enemy)) {
         show_debug_message("Error: Enemy instance not found.");
         return; 
     }
 
     var _enemy = obj_battle_enemy; 
+    var _part_found = false;
     
-    // Handle if enemy have no part attack body instead 
-    if (!variable_instance_exists(_enemy, "parts_instances")) {
-         show_debug_message("Warning: parts_instances missing. Attacking body.");
-         _enemy.hp -= _damage;
-         _enemy.flash = 5;
-         
-         enemy_turn = true; 
-         alarm[0] = 60;
-         return;
-    }
-
-    // 3. Search for the target part in the list
-    var _parts_list = _enemy.parts_instances;
-    var _target_part_instance = noone;
-    
-    for (var i = 0; i < array_length(_parts_list); i++) {
-        var _part = _parts_list[i];
+    // 1. Search for the target part
+    if (variable_instance_exists(_enemy, "parts_instances")) {
+        var _parts_list = _enemy.parts_instances;
         
-        // Ensure part instance still exists (is not destroyed)
-        if (instance_exists(_part)) {
-            if (_part.part_id == _target_name) {
-                _target_part_instance = _part;
-                break; // Target found
+        for (var i = 0; i < array_length(_parts_list); i++) {
+            var _part = _parts_list[i];
+            
+            // If part exists and matches the target name, apply damage
+            if (instance_exists(_part) && _part.part_id == _target_name) {
+                with (_part) { take_damage(_damage); }
+                _part_found = true;
+                show_debug_message("Hit Part: " + _target_name);
+                break; 
             }
         }
     }
 
-    // 4. Apply Damage
-    if (_target_part_instance != noone) {
-        // Target part exists: apply part-specific damage
-        with (_target_part_instance) {
-            take_damage(_damage);
-        }
-        show_debug_message("Hit Part: " + _target_name);
-
-    } else {
-        // Part destroyed or not found: fallback to main body damage
-        show_debug_message("Part missing. Attacking Body directly.");
-        _enemy.hp -= _damage;
-        _enemy.flash = 5;
+    // 2. Fallback to main body if part is missing or destroyed
+    if (!_part_found) {
+        show_debug_message("Part missing or destroyed. Attacking Body directly.");
+        damage_main_body(_damage);
     }
     
-    // 5. End Player Turn
-    enemy_turn = true; 
-    alarm[0] = 60; // Delay before enemy counter-attack
+    // 3. End the turn
+    end_player_turn();
 }
