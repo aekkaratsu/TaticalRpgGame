@@ -7,6 +7,7 @@ waiting_for_qte = false;    // Quick Time Event flag
 // === Math System Variables ===
 processing_math = false;
 global.math_result = -1;    // -1 indicates unfinished
+obj_qte_controller.state = QTE_STATE.IDLE;
 
 
 // === Helper Functions ===
