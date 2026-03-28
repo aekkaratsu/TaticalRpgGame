@@ -14,7 +14,7 @@ cg_sequence = [
 ];
 
 create_dialog(cg_sequence[current_scene].text);
-audio_play_sound(snd_titlescreen_eak,1,true);
+audio_play_sound(snd_prologue,1,true);
 
 // For Hold to skip
 skip_timer = 0;
