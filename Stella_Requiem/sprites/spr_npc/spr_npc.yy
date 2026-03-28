@@ -3,7 +3,7 @@
   "%Name":"spr_npc",
   "bboxMode":0,
   "bbox_bottom":13,
-  "bbox_left":2,
+  "bbox_left":0,
   "bbox_right":13,
   "bbox_top":3,
   "collisionKind":1,

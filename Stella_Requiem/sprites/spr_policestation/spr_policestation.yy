@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_policestation",
   "bboxMode":0,
-  "bbox_bottom":249,
-  "bbox_left":64,
-  "bbox_right":223,
+  "bbox_bottom":231,
+  "bbox_left":59,
+  "bbox_right":207,
   "bbox_top":4,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":280,
+  "height":260,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"73a012d5-9ea0-4131-82a1-c684af969b3e","blendMode":0,"displayName":"default","isLocked":false,"name":"73a012d5-9ea0-4131-82a1-c684af969b3e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":280,
+  "width":260,
 }
