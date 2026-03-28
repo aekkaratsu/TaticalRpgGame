@@ -4,6 +4,7 @@ if (talking == true)
 {
     InventoryAdd(obj_inventory, 1); // ID 1 as egg
     instance_destroy();
+    instance_destroy(obj_tutorial_collectEgg)
     exit; 
 }
 

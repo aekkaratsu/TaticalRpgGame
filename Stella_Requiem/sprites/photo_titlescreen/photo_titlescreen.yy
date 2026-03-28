@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Photo",
-    "path":"folders/Photo.yy",
+    "name":"Menu",
+    "path":"folders/Photo/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
