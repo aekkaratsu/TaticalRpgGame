@@ -3,7 +3,7 @@
   "%Name":"spr_wall_rmp_front1",
   "bboxMode":0,
   "bbox_bottom":322,
-  "bbox_left":163,
+  "bbox_left":0,
   "bbox_right":319,
   "bbox_top":0,
   "collisionKind":1,

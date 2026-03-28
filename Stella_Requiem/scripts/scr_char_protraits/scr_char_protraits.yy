@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_char_protraits",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_char_protraits",
+  "parent":{
+    "name":"Entities",
+    "path":"folders/Objects/Entities.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

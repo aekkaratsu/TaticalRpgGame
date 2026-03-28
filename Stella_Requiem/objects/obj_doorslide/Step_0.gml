@@ -10,10 +10,10 @@ if (distance_to_object(obj_player) < dist) {
     }
 
     // โค้ดเปลี่ยนห้อง (เพิ่มการเช็ค is_changing)
-    if (keyboard_check_pressed(vk_space) && !is_changing) {
+    if ( keyboard_check_pressed(ord("E")) && !is_changing) {
         is_changing = true; // ล็อคไว้ว่ากำลังทำงาน
         show_debug_message("GO!");
-        room_goto(room_town);
+        transition_start(room_town,1700,523, 0.03); 
         exit; 
     }
 } else {

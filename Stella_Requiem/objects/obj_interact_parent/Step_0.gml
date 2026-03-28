@@ -5,7 +5,7 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < 8) // if not
     can_interact = true;
     if (keyboard_check_pressed(input_key))
     {
-        create_dialog(dialog); // Dialog is variable can set when placing spirte in the room then double click on it and set Variable
+        instance_create_depth(0, 0, -9999, obj_cg_name);
     }
 }
 else 

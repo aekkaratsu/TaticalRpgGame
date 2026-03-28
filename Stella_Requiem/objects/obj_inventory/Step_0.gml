@@ -5,7 +5,7 @@ if (keyboard_check_pressed(ord("I"))) {
 
 // --- For Debug ---
 // Add item via id 
-if (keyboard_check_pressed(ord("E"))) 
+if (keyboard_check_pressed(ord("L"))) 
 {
     var success = InventoryAdd(id, 1); // Sent id as rootObject in the InventoryFunction
     

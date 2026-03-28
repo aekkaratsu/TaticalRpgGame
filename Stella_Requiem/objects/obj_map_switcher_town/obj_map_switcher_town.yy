@@ -11,7 +11,10 @@
     "name":"RoomSwitchers",
     "path":"folders/Objects/RoomSwitchers.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_map_switcher_parent",
+    "path":"objects/obj_map_switcher_parent/obj_map_switcher_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle_down",
-    "path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",
+    "name":"spr_teleporter",
+    "path":"sprites/spr_teleporter/spr_teleporter.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "path":"folders/GameVisual/Dialogue.yy",
   },
   "parentObjectId":null,
   "persistent":false,
