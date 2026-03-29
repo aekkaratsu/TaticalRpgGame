@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Sprite44",
-    "path":"sprites/Sprite44/Sprite44.yy",
+    "name":"tile_decorate",
+    "path":"sprites/tile_decorate/tile_decorate.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

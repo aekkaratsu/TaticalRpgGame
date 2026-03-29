@@ -1,25 +1,25 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet10",
+  "%Name":"tileset_2",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet10",
-  "out_columns":66,
+  "name":"tileset_2",
+  "out_columns":21,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Tile Sets",
-    "path":"folders/Tile Sets.yy",
+    "name":"tile",
+    "path":"folders/SpriteProject/tile.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tile_chair",
-    "path":"sprites/tile_chair/tile_chair.yy",
+    "name":"spr_fountain",
+    "path":"sprites/spr_fountain/spr_fountain.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":4356,
+  "tile_count":432,
 }

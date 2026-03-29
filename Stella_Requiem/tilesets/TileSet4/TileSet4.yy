@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Sprite43",
-    "path":"sprites/Sprite43/Sprite43.yy",
+    "name":"tile_vehicle",
+    "path":"sprites/tile_vehicle/tile_vehicle.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
