@@ -1,5 +1,5 @@
 //Initialze
-move_speed = 10;
+move_speed = 3;
 
 hp = 10;
 hp_total = hp;
