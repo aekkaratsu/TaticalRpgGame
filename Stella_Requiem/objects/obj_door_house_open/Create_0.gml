@@ -2,5 +2,5 @@
 event_inherited(); 
 
 // กำหนดค่าเฉพาะสำหรับประตูบานนี้
-target_room = room_town_collapse;         // ห้องที่ประตูนี้จะพาไป
+target_room = rm_town_player_house;         // ห้องที่ประตูนี้จะพาไป
 spr_open = spr_door_house_open;           // Sprite ประตูเปิด

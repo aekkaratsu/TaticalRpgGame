@@ -10,7 +10,6 @@
     {"name":"inst_462FFF58","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_4AEDDE54","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_6357BC06","path":"rooms/room_town/room_town.yy",},
-    {"name":"inst_7DD6E756","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_4E80AD1D","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_3D66C377","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_59C61472","path":"rooms/room_town/room_town.yy",},
@@ -33,6 +32,8 @@
     {"name":"inst_212FD7F6","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_1AB9F393","path":"rooms/room_town/room_town.yy",},
     {"name":"inst_382D4997","path":"rooms/room_town/room_town.yy",},
+    {"name":"inst_3F2929C0","path":"rooms/room_town/room_town.yy",},
+    {"name":"inst_4288A3E2","path":"rooms/room_town/room_town.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -41,9 +42,10 @@
         {"name":"g_ContrastBrightness","type":0,"value":"0.85",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_7DD6E756","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7DD6E756","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1931.0,"y":498.0,},
         {"$GMRInstance":"v4","%Name":"inst_4E80AD1D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E80AD1D","objectId":{"name":"obj_doorslide2","path":"objects/obj_doorslide2/obj_doorslide2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1922.0,"y":434.0,},
         {"$GMRInstance":"v4","%Name":"inst_3D66C377","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D66C377","objectId":{"name":"obj_door_house_open","path":"objects/obj_door_house_open/obj_door_house_open.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1816.0,"y":944.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3F2929C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F2929C0","objectId":{"name":"obj_map_switcher_roadpath_left","path":"objects/obj_map_switcher_roadpath_left/obj_map_switcher_roadpath_left.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1888.0,"y":448.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4288A3E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4288A3E2","objectId":{"name":"obj_npc_davin","path":"objects/obj_npc_davin/obj_npc_davin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":448.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"npc","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"npc","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
