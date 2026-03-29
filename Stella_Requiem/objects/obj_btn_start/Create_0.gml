@@ -1,3 +1,5 @@
+global.seen_house_cg = false;
+
 action = function ()
 {
     audio_play_sound(snd_game_start,11,false);

@@ -2,6 +2,7 @@
 walk_speed = 1;
 titlemap = layer_tilemap_get_id("Titles_Col");
 state = "idle"; // Can be "idle" or "walking"
+move_dir = 0;
 
 // Set the first alarm to trigger between 1 and 3 seconds
 // game_get_speed(gamespeed_fps) equals 1 second in game time

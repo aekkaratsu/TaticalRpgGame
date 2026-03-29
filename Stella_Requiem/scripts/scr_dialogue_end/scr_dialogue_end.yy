@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dialogue_end",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialogue_end",
+  "parent":{
+    "name":"endprologue",
+    "path":"folders/GameVisual/CG/endprologue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

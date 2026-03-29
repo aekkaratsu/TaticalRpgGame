@@ -4,6 +4,7 @@ global.char_portraits = {
     "Narrator": noone,               
     "???": noone,           
     "Philia" : spr_protrait_philia,
-    "Davin" :  spr_npc_davin    
+    "Davin" :  spr_npc_davin,
+    "JeyGrude" : cg_intro_3,    
          
 };
