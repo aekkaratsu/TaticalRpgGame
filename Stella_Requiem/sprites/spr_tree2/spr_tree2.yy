@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_tree2",
   "bboxMode":0,
-  "bbox_bottom":113,
+  "bbox_bottom":114,
   "bbox_left":39,
   "bbox_right":92,
   "bbox_top":15,
