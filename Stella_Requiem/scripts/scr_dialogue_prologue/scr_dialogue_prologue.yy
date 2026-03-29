@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dialogue_prologue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialogue_prologue",
+  "parent":{
+    "name":"prologue",
+    "path":"folders/GameVisual/CG/prologue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

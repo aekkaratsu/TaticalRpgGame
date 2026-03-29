@@ -14,12 +14,20 @@
   "parent":{
     "name":"tile",
     "path":"folders/SpriteProject/tile.yy",
+  "out_columns":8,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Make the world beautiful",
+    "path":"folders/Sprites/Make the world beautiful.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
     "name":"spr_fountain",
     "path":"sprites/spr_fountain/spr_fountain.yy",
+    "name":"Rock",
+    "path":"sprites/Rock/Rock.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -35,4 +43,5 @@
   "tilexoff":0,
   "tileyoff":0,
   "tile_count":432,
+  "tile_count":64,
 }

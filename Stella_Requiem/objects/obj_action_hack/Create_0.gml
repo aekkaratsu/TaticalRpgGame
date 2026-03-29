@@ -1,5 +1,6 @@
 action = function ()
 {
+    if (instance_exists(obj_qte_controller) || instance_exists(obj_math_controller)) exit;
     if (obj_battle_player.data.charge >= 1)
     {
         obj_battle_player.data.charge = 0; //reset the bar when finished

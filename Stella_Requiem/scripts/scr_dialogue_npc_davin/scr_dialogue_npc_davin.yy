@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dialogue_npc_davin",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialogue_npc_davin",
+  "parent":{
+    "name":"Davin",
+    "path":"folders/Objects/Entities/Friendly/Npcs/Davin.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

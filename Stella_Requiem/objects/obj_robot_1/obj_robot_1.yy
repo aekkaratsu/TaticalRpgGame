@@ -6,8 +6,8 @@
   "name":"obj_robot_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Friendly",
-    "path":"folders/Objects/Entities/Friendly.yy",
+    "name":"???",
+    "path":"folders/Objects/Entities/Friendly/Npcs/???.yy",
   },
   "parentObjectId":{
     "name":"obj_npc_parent_robot",

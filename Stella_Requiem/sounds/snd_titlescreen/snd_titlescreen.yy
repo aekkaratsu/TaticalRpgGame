@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":94.74134,
+  "duration":514.80963,
   "exportDir":"",
   "name":"snd_titlescreen",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_titlescreen.mp3",
-  "volume":0.25,
+  "volume":0.15,
 }

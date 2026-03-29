@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dialogue_cola",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialogue_cola",
+  "parent":{
+    "name":"cola",
+    "path":"folders/GameVisual/CG/Items/cola.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

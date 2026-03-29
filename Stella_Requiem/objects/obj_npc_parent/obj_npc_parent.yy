@@ -10,8 +10,8 @@
   "name":"obj_npc_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Friendly",
-    "path":"folders/Objects/Entities/Friendly.yy",
+    "name":"Npcs",
+    "path":"folders/Objects/Entities/Friendly/Npcs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

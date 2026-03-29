@@ -1,7 +1,13 @@
 // Check if dialogue or somethings apper then exit this event ( Player cant move )
 if(instance_exists(obj_dialog)) exit;
-if (obj_inventory.show_inventory = true) exit;
-    
+if (room == rm_battle) {
+    audio_pause_sound(snd_player_walk_eak);
+    visible = false; 
+    exit;
+} else {
+    visible = true;
+}
+if (obj_inventory.show_inventory = true) exit; 
 // Check Input chage the ord to the numbers 1 , 0 ,-1
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
