@@ -1,4 +1,8 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_tree5","order":1,"path":"objects/obj_tree5/obj_tree5.yy",},
+    {"name":"Rock","order":1,"path":"sprites/Rock/Rock.yy",},
+    {"name":"realrock","order":1,"path":"tilesets/realrock/realrock.yy",},
+  ],
 }

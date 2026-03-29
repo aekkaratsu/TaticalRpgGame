@@ -19,7 +19,7 @@ if (distance_to_object(obj_player) < dist) {
         if (target_room != noone) { // ป้องกันเกมแครชถ้าลืมตั้งค่าห้อง
             changing = true;
             show_debug_message("GO TO ROOM: " + room_get_name(target_room));
-            room_goto(target_room);
+            transition_start(target_room,x,y,0.03);
             exit; 
         } else {
             show_debug_message("ERROR: ยังไม่ได้กำหนด target_room ให้ประตูนี้นะ!");

@@ -3,7 +3,7 @@
   "%Name":"Rock",
   "bboxMode":0,
   "bbox_bottom":127,
-  "bbox_left":0,
+  "bbox_left":2,
   "bbox_right":127,
   "bbox_top":1,
   "collisionKind":1,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"93de6027-a921-4cf5-842a-5ba78ea3de5d","name":"93de6027-a921-4cf5-842a-5ba78ea3de5d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1e126de9-eb4f-4fb7-bdb0-5788f283acbe","name":"1e126de9-eb4f-4fb7-bdb0-5788f283acbe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"91a22d2c-57af-4392-ad02-b77c26e9831e","blendMode":0,"displayName":"default","isLocked":false,"name":"91a22d2c-57af-4392-ad02-b77c26e9831e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0c73bfba-0990-4744-b7aa-e3d2551514f9","blendMode":0,"displayName":"default","isLocked":false,"name":"0c73bfba-0990-4744-b7aa-e3d2551514f9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Rock",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Make the world beautiful",
-    "path":"folders/Sprites/Make the world beautiful.yy",
+    "name":"Trees",
+    "path":"folders/Sprites/Make the world beautiful/Trees.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"93de6027-a921-4cf5-842a-5ba78ea3de5d","path":"sprites/Rock/Rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e79b6e31-042e-4929-9b22-782b00de69cb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e126de9-eb4f-4fb7-bdb0-5788f283acbe","path":"sprites/Rock/Rock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"befde19e-aa96-475b-a35d-6ccfd332a4c9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
