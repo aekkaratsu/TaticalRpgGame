@@ -15,7 +15,7 @@ if (distance_to_object(obj_player) < dist) {
     }
 
     // โค้ดเปลี่ยนห้อง
-    if (keyboard_check_pressed(vk_space) && !changing) {
+    if (keyboard_check_pressed(ord("E")) && !changing) {
         if (target_room != noone) { // ป้องกันเกมแครชถ้าลืมตั้งค่าห้อง
             changing = true;
             show_debug_message("GO TO ROOM: " + room_get_name(target_room));

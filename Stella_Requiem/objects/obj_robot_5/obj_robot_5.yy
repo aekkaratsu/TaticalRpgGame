@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_robot_5",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_robot_5",
   "overriddenProperties":[],
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_5",
-    "path":"sprites/spr_npc_5/spr_npc_5.yy",
+    "name":"spr_npc5_right",
+    "path":"sprites/spr_npc5_right/spr_npc5_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,
