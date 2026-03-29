@@ -3,4 +3,6 @@ event_inherited();
 
 // กำหนดค่าเฉพาะสำหรับประตูบานนี้
 target_room = rm_town_player_house;         // ห้องที่ประตูนี้จะพาไป
+spr_closed = spr_door_house;
 spr_open = spr_door_house_open;           // Sprite ประตูเปิด
+image_index = 0;
