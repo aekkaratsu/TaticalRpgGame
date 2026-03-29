@@ -1,12 +1,23 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"endprologue","order":2,"path":"folders/GameVisual/CG/endprologue.yy",},
+    {"name":"sispassedaway","order":1,"path":"folders/GameVisual/CG/sispassedaway.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"obj_tree5","order":1,"path":"objects/obj_tree5/obj_tree5.yy",},
+    {"name":"scr_dialogue_end","order":1,"path":"scripts/scr_dialogue_end/scr_dialogue_end.yy",},
+    {"name":"scr_dialogue_sispassedaway","order":1,"path":"scripts/scr_dialogue_sispassedaway/scr_dialogue_sispassedaway.yy",},
+    {"name":"cg_end_1","order":7,"path":"sprites/cg_end_1/cg_end_1.yy",},
+    {"name":"cg_end_2","order":3,"path":"sprites/cg_end_2/cg_end_2.yy",},
+    {"name":"cg_end_3","order":4,"path":"sprites/cg_end_3/cg_end_3.yy",},
+    {"name":"cg_end_4","order":6,"path":"sprites/cg_end_4/cg_end_4.yy",},
+    {"name":"cg_sispas_1","order":2,"path":"sprites/cg_sispas_1/cg_sispas_1.yy",},
+    {"name":"cg_sispas_2","order":3,"path":"sprites/cg_sispas_2/cg_sispas_2.yy",},
     {"name":"Rock","order":1,"path":"sprites/Rock/Rock.yy",},
-    {"name":"realrock","order":1,"path":"tilesets/realrock/realrock.yy",},
     {"name":"spr_enemy3_1","order":1,"path":"sprites/spr_enemy3_1/spr_enemy3_1.yy",},
     {"name":"spr_enemy3_2","order":2,"path":"sprites/spr_enemy3_2/spr_enemy3_2.yy",},
     {"name":"spr_enemy3_3","order":3,"path":"sprites/spr_enemy3_3/spr_enemy3_3.yy",},
     {"name":"spr_enemy3_4","order":4,"path":"sprites/spr_enemy3_4/spr_enemy3_4.yy",},
+    {"name":"realrock","order":1,"path":"tilesets/realrock/realrock.yy",},
   ],
 }

@@ -21,3 +21,15 @@ if (keyboard_check_pressed(ord("R")))
 {
     InventoryRemove(id, 0); 
 }
+
+// Get Energy
+if (keyboard_check_pressed(ord("K"))) 
+{
+    var success = InventoryAdd(id, 0); // Sent id as rootObject in the InventoryFunction
+    
+    if (success) {
+        show_debug_message("Added item");
+    } else {
+        show_debug_message("Inventory full");
+    }
+}

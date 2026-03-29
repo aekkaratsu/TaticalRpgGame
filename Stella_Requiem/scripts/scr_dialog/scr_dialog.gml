@@ -14,7 +14,7 @@ char_colors = {
     "Player": c_aqua,
     "Congrats": c_yellow,
     "Narrator": c_aqua,
-    "???" : c_white,
+    "JeyGrude" : c_aqua,
     "Philia" : c_white,
     "????" : c_black,
     
@@ -55,9 +55,9 @@ stu_trash_dia1 = [
 
 inter_item_test = [
 {
-    name:"???",
+    name:"JeyGrude",
     msg:"Don't Know what is it." ,
-    name:"???",
+    name:"JeyGrude",
     msg:"Is maybe relic form advance era." 
 } ,  
 ]  

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dialogue_sispassedaway",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialogue_sispassedaway",
+  "parent":{
+    "name":"sispassedaway",
+    "path":"folders/GameVisual/CG/sispassedaway.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
