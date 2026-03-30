@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc3_right",
-    "path":"sprites/spr_npc3_right/spr_npc3_right.yy",
+    "name":"spr_npc3_alive",
+    "path":"sprites/spr_npc3_alive/spr_npc3_alive.yy",
   },
   "spriteMaskId":null,
   "visible":true,

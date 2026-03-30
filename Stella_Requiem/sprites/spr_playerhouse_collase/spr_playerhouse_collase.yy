@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_playerhouse_collase",
   "bboxMode":0,
-  "bbox_bottom":200,
+  "bbox_bottom":201,
   "bbox_left":14,
   "bbox_right":142,
   "bbox_top":65,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a7912695-02e3-455a-9575-9648d132ae42","name":"a7912695-02e3-455a-9575-9648d132ae42","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7ebcfde1-b32f-491f-9759-abf115c8742d","name":"7ebcfde1-b32f-491f-9759-abf115c8742d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":214,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"83517e4a-8748-4b6f-8107-f0d93408c31e","blendMode":0,"displayName":"default","isLocked":false,"name":"83517e4a-8748-4b6f-8107-f0d93408c31e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"12e5eacd-559c-44d8-9268-33698efe6b03","blendMode":0,"displayName":"default","isLocked":false,"name":"12e5eacd-559c-44d8-9268-33698efe6b03","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_playerhouse_collase",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a7912695-02e3-455a-9575-9648d132ae42","path":"sprites/spr_playerhouse_collase/spr_playerhouse_collase.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c61c6deb-151a-48a6-80f8-97aa54d77532","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7ebcfde1-b32f-491f-9759-abf115c8742d","path":"sprites/spr_playerhouse_collase/spr_playerhouse_collase.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b3d521ad-7025-44b1-bb88-2f21c0c377e7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

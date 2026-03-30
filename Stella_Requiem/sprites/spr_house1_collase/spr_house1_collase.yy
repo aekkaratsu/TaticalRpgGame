@@ -3,7 +3,7 @@
   "%Name":"spr_house1_collase",
   "bboxMode":0,
   "bbox_bottom":274,
-  "bbox_left":63,
+  "bbox_left":64,
   "bbox_right":237,
   "bbox_top":43,
   "collisionKind":1,
