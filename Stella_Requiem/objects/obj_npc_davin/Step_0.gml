@@ -14,6 +14,7 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < 8) {
     can_talk = true;
     
     if (keyboard_check_pressed(input_key)) {
+        InventoryAdd(obj_inventory, 0);
         instance_create_depth(0, 0, -1111, obj_cg_davin1);
         is_talking = true;
         
