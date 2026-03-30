@@ -35,19 +35,19 @@ dia_1 = [
 
 stu_trash_dia1 = [
 {
-    name:"Narrator",
+    name:"JeyGrude",
     msg:"Behold this hollowed monument of human regret, a bottomless abyss where dreams of a healthy diet and functional electronics go to perish. It's not just a trash can" ,
 } ,
 {
-    name:"Narrator",
+    name:"JeyGrude",
     msg:"it's a physical manifestation of my  I'll do it tomorrow'  attitude, currently holding more secrets and discarded takeout containers than your average CIA shredder." ,
 },
 {
-    name:"Narrator",
+    name:"JeyGrude",
     msg:"People say I should find a role model, so I looked at this trash can. It's sturdy, it takes everyone's crap without complaining, and even though it's literally garbage on the inside, it still manages to keep its lid shut and act like it's got its life together. We are basically twins, except it gets picked up more often than I do.",
 },
 {
-    name:"Narrator",
+    name:"JeyGrude",
     msg:"What the is this?"
 }
 ]
@@ -56,7 +56,9 @@ stu_trash_dia1 = [
 inter_item_test = [
 {
     name:"JeyGrude",
-    msg:"Don't Know what is it." ,
+    msg:"Don't Know what is it." 
+},{
+    
     name:"JeyGrude",
     msg:"Is maybe relic form advance era." 
 } ,  

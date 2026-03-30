@@ -1,3 +1,7 @@
+if (instance_exists(obj_cg_parent)) {
+    show_inventory = false
+    exit;
+}
 // Toggle Inventory
 if (keyboard_check_pressed(ord("I"))) {
     show_inventory = !show_inventory; 

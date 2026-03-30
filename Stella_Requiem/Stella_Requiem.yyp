@@ -260,6 +260,7 @@
     {"id":{"name":"cg_intro_3","path":"sprites/cg_intro_3/cg_intro_3.yy",},},
     {"id":{"name":"cg_sispas_1","path":"sprites/cg_sispas_1/cg_sispas_1.yy",},},
     {"id":{"name":"cg_sispas_2","path":"sprites/cg_sispas_2/cg_sispas_2.yy",},},
+    {"id":{"name":"pho_jeygrude","path":"sprites/pho_jeygrude/pho_jeygrude.yy",},},
     {"id":{"name":"photo_logo","path":"sprites/photo_logo/photo_logo.yy",},},
     {"id":{"name":"photo_mutebutton","path":"sprites/photo_mutebutton/photo_mutebutton.yy",},},
     {"id":{"name":"photo_startbutton","path":"sprites/photo_startbutton/photo_startbutton.yy",},},
