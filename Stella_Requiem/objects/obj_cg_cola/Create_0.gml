@@ -6,8 +6,8 @@ cg_alpha = 1;
 is_transitioning = false;
 
 cg_sequence = [
-    { img: spr_cg_cola, text: global.stu_can_dia1 },
-    { img: spr_cg_gramar, text: global.stu_can_dia2}
+    { img: spr_cg_cola_1, text: global.stu_can_dia1 },
+    { img: spr_cg_cola_2, text: global.stu_can_dia2}
 ];
 next_room = -1;
 next_x = 0;
