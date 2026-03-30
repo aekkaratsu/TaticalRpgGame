@@ -9,7 +9,9 @@ next_room = -1;
 
 cg_sequence = [
     { img: cg_sispas_1, text: global.town_dia_sispass1 },
-    { img: cg_sispas_2, text: global.town_dia_sispass2 }
+    { img: cg_sispas_2, text: global.town_dia_sispass2 },
+    { img: cg_sispas_3, text: global.town_dia_sispass3 },
+    
 ];
 
 create_dialog(cg_sequence[current_scene].text);

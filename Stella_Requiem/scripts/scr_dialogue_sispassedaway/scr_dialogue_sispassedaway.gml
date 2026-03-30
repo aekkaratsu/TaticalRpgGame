@@ -11,6 +11,9 @@ global.town_dia_sispass2 = [
     { name: "JeyGrude", msg: "..." },
     { name: "JeyGrude", msg: "...You." },
     { name: "JeyGrude", msg: "You're the ones who did this... You took her away from me!" },
+]
+    
+global.town_dia_sispass3 = [
     { name: "JeyGrude", msg: "I swear... I'll tear every last one of you into scrap metal!" },
     { name: "JeyGrude", msg: "DIE, YOU BASTARDS!!!" }
 ];
