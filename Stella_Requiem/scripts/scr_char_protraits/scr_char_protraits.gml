@@ -5,6 +5,6 @@ global.char_portraits = {
     "???": noone,           
     "Philia" : spr_protrait_philia,
     "Davin" :  spr_npc_davin,
-    "JeyGrude" : cg_intro_3,    
+    "JeyGrude" : pho_jeygrude,    
          
 };

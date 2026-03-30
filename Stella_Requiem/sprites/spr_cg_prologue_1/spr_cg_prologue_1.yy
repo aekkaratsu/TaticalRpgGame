@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Photos",
-    "path":"folders/GameVisual/Photos.yy",
+    "name":"prologue",
+    "path":"folders/GameVisual/CG/prologue.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

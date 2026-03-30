@@ -2,6 +2,10 @@ if (room == rm_battle) {
     exit;
 }
 
+if (instance_exists(obj_cg_parent)) {
+    exit;
+}
+
 // ==========================================
 // --- 1. Settings & Setup ---
 // ==========================================
