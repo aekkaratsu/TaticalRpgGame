@@ -1,4 +1,4 @@
-if (instance_exists(obj_dialog)) exit;
+if (instance_exists(obj_dialog) || instance_exists(obj_cg_parent)) exit;
 
 if (is_talking) {
     is_talking = false;

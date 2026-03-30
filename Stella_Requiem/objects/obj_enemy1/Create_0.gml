@@ -18,8 +18,8 @@ enemy_parts = [
         name: "LEGS",
         hp: 2,
         hp_max: 2,
-        offset_x: 20,
-        offset_y: -30, 
+        offset_x: -50,
+        offset_y: 0, 
         is_weakness: true,
         break_effect: "SLOW" 
     },
@@ -27,8 +27,8 @@ enemy_parts = [
         name: "LEGS",
         hp: 2,
         hp_max: 2,
-        offset_x: -20,
-        offset_y: -30,
+        offset_x: -40,
+        offset_y: -25,
         is_weakness: false,
         break_effect: "SLOW"
     },
@@ -36,8 +36,8 @@ enemy_parts = [
         name: "LEGS",
         hp: 2,
         hp_max: 2,
-        offset_x: -20,
-        offset_y: -60,
+        offset_x: 42,
+        offset_y: 0,
         is_weakness: false,
         break_effect: "SLOW"
     },
@@ -46,7 +46,7 @@ enemy_parts = [
         hp: 2,
         hp_max: 2,
         offset_x: 30,
-        offset_y: -60,
+        offset_y: -25,
         is_weakness: false,
         break_effect: "SLOW"
     }, 
@@ -54,8 +54,8 @@ enemy_parts = [
         name: "HEAD",
         hp: 2,
         hp_max: 2,
-        offset_x: 0,
-        offset_y: -35, 
+        offset_x: -3,
+        offset_y: -25, 
         is_weakness: true,
         break_effect: "ACCURACY_DOWN" 
     },

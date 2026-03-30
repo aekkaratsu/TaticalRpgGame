@@ -1,4 +1,4 @@
-if (instance_exists(obj_dialog)) exit;
+if (instance_exists(obj_dialog) || instance_exists(obj_cg_parent)) exit;
 
 if (is_talking) {
     is_talking = false;
@@ -14,7 +14,7 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < 8) {
     can_talk = true;
     
     if (keyboard_check_pressed(input_key)) {
-        create_dialog(global.town_dia_part1);
+        instance_create_depth(0, 0, -1111, obj_cg_davin1);
         is_talking = true;
         
         if (goback_npc) {
