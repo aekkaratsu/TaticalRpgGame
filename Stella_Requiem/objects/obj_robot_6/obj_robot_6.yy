@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_guard_right",
-    "path":"sprites/spr_npc_guard_right/spr_npc_guard_right.yy",
+    "name":"spr_npc_guard_dead",
+    "path":"sprites/spr_npc_guard_dead/spr_npc_guard_dead.yy",
   },
   "spriteMaskId":null,
   "visible":true,

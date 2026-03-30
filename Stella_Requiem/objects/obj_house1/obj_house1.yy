@@ -11,7 +11,10 @@
     "name":"house",
     "path":"folders/Objects/Structure/house.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_house",
+    "path":"objects/obj_house/obj_house.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

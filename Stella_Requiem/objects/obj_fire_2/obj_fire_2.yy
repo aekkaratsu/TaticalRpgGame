@@ -9,7 +9,10 @@
     "name":"fire",
     "path":"folders/Objects/Structure/fire.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_fire",
+    "path":"objects/obj_fire/obj_fire.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
