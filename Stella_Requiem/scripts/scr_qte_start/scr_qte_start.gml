@@ -17,3 +17,16 @@ function scr_qte_start(_obj, _diff)
 
     show_debug_message("QTE STARTED");
 }
+
+function scr_qte_start_random(_diff)
+{
+    var qte_pool = [
+        //obj_qte_wheel,
+        obj_qte_buttonmash,
+        obj_qte_sequence
+    ]
+    
+    var picked = qte_pool[irandom(array_length(qte_pool) -1)];
+    scr_qte_start(picked, _diff);
+}
+

@@ -4,27 +4,24 @@ if (waiting_for_qte) {
         
     if (obj_qte_controller.state == QTE_STATE.SUCCESS) {
         //QTE SUCCESS
-        obj_battle_player.data.hp -= pending_enemy_damage * 0;
-        audio_play_sound(snd_qte_succes,2,false)
-        
         waiting_for_qte = false;
-        
+        audio_play_sound(snd_qte_succes,2,false)
         scr_math_parry_start(obj_battle_enemy.data.difficulty);
-        obj_qte_controller.state = QTE_STATE.IDLE;
         
+        alarm[3] = 1;
     }
     else if (obj_qte_controller.state == QTE_STATE.FAIL) {
         //QTE FAIL
         obj_battle_player.data.hp -= pending_enemy_damage;
         audio_play_sound(snd_qte_fail,2,false)
-        
         waiting_for_qte = false;
         enemy_turn = false;
         
         if(check_for_end()) {
             alarm[2] = 60;
         }
-        obj_qte_controller.state = QTE_STATE.IDLE;
+        
+        alarm[3] = 1;
     }
 }
 }
@@ -36,8 +33,6 @@ if (global.math_result != -1)
         audio_play_sound(snd_correct_eak,2,false)
         obj_battle_manager.damage_main_body(15);
         audio_play_sound(snd_shock,1,false);
-        
-        
     }
     
     else if (global.math_result == 1) {

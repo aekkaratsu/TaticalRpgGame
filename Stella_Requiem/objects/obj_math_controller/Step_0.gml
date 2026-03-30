@@ -9,7 +9,7 @@ if (state == MATH_STATE.PLAYING) {
     if (keyboard_string != "") {
         for (var i = 1; i <= string_length(keyboard_string); i++) {
             var ch = string_char_at(keyboard_string, i);
-            if (ch >= "0" && ch <= "9") {
+            if (ch >= "0" && ch <= "9" ||  ch = "-") {
                 player_input += ch;
             }
         }

@@ -106,6 +106,7 @@
   "name":"Stella_Requiem",
   "resources":[
     {"id":{"name":"DialogueFonts","path":"fonts/DialogueFonts/DialogueFonts.yy",},},
+    {"id":{"name":"fnt_large","path":"fonts/fnt_large/fnt_large.yy",},},
     {"id":{"name":"ReadMe","path":"notes/ReadMe/ReadMe.yy",},},
     {"id":{"name":"obj_action_attack","path":"objects/obj_action_attack/obj_action_attack.yy",},},
     {"id":{"name":"obj_action_hack","path":"objects/obj_action_hack/obj_action_hack.yy",},},
@@ -192,7 +193,9 @@
     {"id":{"name":"obj_playerhouse","path":"objects/obj_playerhouse/obj_playerhouse.yy",},},
     {"id":{"name":"obj_policestation_collpase","path":"objects/obj_policestation_collpase/obj_policestation_collpase.yy",},},
     {"id":{"name":"obj_policestation","path":"objects/obj_policestation/obj_policestation.yy",},},
+    {"id":{"name":"obj_qte_buttonmash","path":"objects/obj_qte_buttonmash/obj_qte_buttonmash.yy",},},
     {"id":{"name":"obj_qte_controller","path":"objects/obj_qte_controller/obj_qte_controller.yy",},},
+    {"id":{"name":"obj_qte_sequence","path":"objects/obj_qte_sequence/obj_qte_sequence.yy",},},
     {"id":{"name":"obj_qte_wheel","path":"objects/obj_qte_wheel/obj_qte_wheel.yy",},},
     {"id":{"name":"obj_robot_1","path":"objects/obj_robot_1/obj_robot_1.yy",},},
     {"id":{"name":"obj_robot_2","path":"objects/obj_robot_2/obj_robot_2.yy",},},

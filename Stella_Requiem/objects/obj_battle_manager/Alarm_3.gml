@@ -1,0 +1,1 @@
+obj_qte_controller.state = QTE_STATE.IDLE;
