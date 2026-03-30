@@ -8,7 +8,7 @@ if (waiting_for_qte) {
         audio_play_sound(snd_qte_succes,2,false)
         scr_math_parry_start(obj_battle_enemy.data.difficulty);
         
-        alarm[3] = 1;
+        alarm[3] = 1; n
     }
     else if (obj_qte_controller.state == QTE_STATE.FAIL) {
         //QTE FAIL
