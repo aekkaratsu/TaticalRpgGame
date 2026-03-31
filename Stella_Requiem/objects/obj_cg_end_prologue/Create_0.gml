@@ -16,3 +16,5 @@ cg_sequence = [
 ];
 
 create_dialog(cg_sequence[current_scene].text);
+audio_play_sound(snd_prologue_ending,1,false)
+audio_play_sound(snd_fireclacking,1,true)

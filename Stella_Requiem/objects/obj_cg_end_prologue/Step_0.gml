@@ -20,6 +20,11 @@ if (is_transitioning) {
             instance_destroy();
         }
     }
+    
+    if (current_scene == 3) {
+        audio_stop_sound(snd_fireclacking)
+        
+    }
 } 
 else {
     cg_alpha = lerp(cg_alpha, 1, 0.05);

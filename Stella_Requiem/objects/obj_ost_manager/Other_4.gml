@@ -6,24 +6,24 @@ switch (room) {
     case room_town:          _room_music = snd_town_theme; break;
     case room_town_collapse: _room_music = snd_town_collapse_theme; break;
     case rm_battle:          _room_music = snd_battle_theme; break;
+    case rm_town_player_house: _room_music = snd_fireclacking; break;
 }
 
-// --- 2. เช็คเงื่อนไขพิเศษจากบทพูด หรือ Event (อัปเกรดตรงนี้!) ---
-// ตัวอย่าง: ถ้าเล่นถึงช่วงเมืองถล่ม (global.play_collapse_dia) ให้เปลี่ยนเพลงทันทีแม้จะยังอยู่ในห้องเดิม
+
 if (global.town_dia_part1 == true) {
     target_music = snd_town_collapse_theme;
 } else {
     target_music = _room_music;
 }
 
-// --- 3. ลอจิกการเปลี่ยนเพลงแบบ Fade In / Fade Out ---
+
 if (current_music != target_music) {
     
-    // ก. ค่อยๆ เฟดเพลงเก่าออก
+    
     if (audio_is_playing(music_instance)) {
-        var _old_inst = music_instance; // เก็บ ID เพลงเก่าไว้
-        audio_sound_gain(_old_inst, 0, fade_time); // สั่งให้ค่อยๆ เบาจนเงียบ
-        // (Optional) ถ้าอยากให้ลบเพลงเก่าทิ้งจริงๆ ต้องใช้ Alarm ช่วย หรือปล่อยให้มันวนจนเงียบไปเองก็ได้ครับ
+        var _old_inst = music_instance; 
+        audio_sound_gain(_old_inst, 0, fade_time); 
+       
     }
     
     // ข. เริ่มเล่นเพลงใหม่

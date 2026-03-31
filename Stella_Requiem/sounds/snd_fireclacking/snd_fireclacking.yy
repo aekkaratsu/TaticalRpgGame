@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_fireclacking",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":79.53599,
+  "exportDir":"",
+  "name":"snd_fireclacking",
+  "parent":{
+    "name":"endprologue",
+    "path":"folders/GameVisual/CG/endprologue.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_fireclacking.mp3",
+  "volume":0.21,
+}
