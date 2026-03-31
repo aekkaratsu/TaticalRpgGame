@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_titlescreen_eak",
   "parent":{
-    "name":"Sound",
-    "path":"folders/Sound.yy",
+    "name":"Battle",
+    "path":"folders/Sound/Battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
