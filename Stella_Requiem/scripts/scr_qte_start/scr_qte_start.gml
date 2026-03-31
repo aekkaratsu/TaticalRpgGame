@@ -22,7 +22,7 @@ function scr_qte_start_random(_diff)
 {
     var qte_pool = [
         //obj_qte_wheel,
-        obj_qte_buttonmash,
+        //obj_qte_buttonmash,
         obj_qte_sequence
     ]
     
