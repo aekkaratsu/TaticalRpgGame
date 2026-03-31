@@ -6,6 +6,12 @@ if (is_transitioning) {
     if (cg_alpha <= 0.01) {
         current_scene++;
         is_transitioning = false;
+        if (current_scene == 1){
+            audio_play_sound(snd_clothsgrab,1,false);
+            call_later(0.6, time_source_units_seconds, function() {
+        audio_play_sound(snd_wallthud, 10, false);
+    });
+}
         
         if (current_scene < array_length(cg_sequence)) {
             create_dialog(cg_sequence[current_scene].text);

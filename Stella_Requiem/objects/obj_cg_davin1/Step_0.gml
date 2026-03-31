@@ -21,8 +21,11 @@ if (is_transitioning) {
         }
     }
     
+    
+    
     if (current_scene == 2) {
         instance_create_depth(0, 0, 0, obj_shake);
+        audio_stop_sound(snd_town_theme);
         audio_play_sound(snd_explosion,1,false);
     }
 } 

@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_fireclacking",
+  "%Name":"snd_wallthud",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":79.53599,
+  "duration":0.57469386,
   "exportDir":"",
-  "name":"snd_fireclacking",
+  "name":"snd_wallthud",
   "parent":{
     "name":"sounds",
     "path":"folders/GameVisual/CG/endprologue/sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_fireclacking.mp3",
-  "volume":0.21,
+  "soundFile":"snd_wallthud.mp3",
+  "volume":0.2,
 }

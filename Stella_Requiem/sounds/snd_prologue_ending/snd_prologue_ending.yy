@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_prologue_ending",
   "parent":{
-    "name":"endprologue",
-    "path":"folders/GameVisual/CG/endprologue.yy",
+    "name":"sounds",
+    "path":"folders/GameVisual/CG/endprologue/sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
