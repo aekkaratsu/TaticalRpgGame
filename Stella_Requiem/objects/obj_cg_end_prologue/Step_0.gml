@@ -12,7 +12,8 @@ if (is_transitioning) {
         } 
         else {
             if (next_room != -1) {
-                transition_start(next_room, next_x, next_y, 0.05); 
+                transition_start(next_room, next_x, next_y, 0.02); 
+                
                 
             }
             game_restart();

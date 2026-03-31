@@ -1,7 +1,9 @@
 // Check if dialogue or somethings apper then exit this event ( Player cant move )
-if(instance_exists(obj_dialog)) exit;
+if (instance_exists(obj_cg_parent) || instance_exists(obj_dialog) || (instance_exists(obj_inventory) && !obj_inventory.visible)) {
+    exit;
+}
 if (room == rm_battle) {
-    audio_pause_sound(snd_player_walk_eak);
+    audio_pause_sound(snd_playerwalk);
     visible = false; 
     exit;
 } else {
@@ -18,7 +20,7 @@ move_and_collide(_hor * move_speed, _ver * move_speed, [titlemap], undefined, un
 // Use condition to change sprites
 if (_hor != 0 or _ver != 0)
 {   
-    audio_resume_sound(snd_player_walk_eak);
+    audio_resume_sound(snd_playerwalk);
     if (_ver > 0) sprite_index = spr_player_main_walk_F;
     else if (_ver < 0) sprite_index = spr_player_main_walk_B;
     else if (_hor > 0) sprite_index = spr_player_main_walk_R;
@@ -28,7 +30,7 @@ if (_hor != 0 or _ver != 0)
     
 } 
 else //not moving
-{   audio_pause_sound(snd_player_walk_eak);
+{   audio_pause_sound(snd_playerwalk);
     //Logic is checking player is moving which direction and then set to idle
     // == for compare, = for set value
 	if (sprite_index == spr_player_main_walk_R) sprite_index = spr_player_main_idle_R;

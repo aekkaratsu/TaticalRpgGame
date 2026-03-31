@@ -9,13 +9,21 @@ if (is_transitioning) {
         
         if (current_scene < array_length(cg_sequence)) {
             create_dialog(cg_sequence[current_scene].text);
+            
+            
         } 
         else {
             if (next_room != -1) {
+                
                 transition_start(next_room, next_x, next_y, 1); 
             }
             instance_destroy();
         }
+    }
+    
+    if (current_scene == 2) {
+        instance_create_depth(0, 0, 0, obj_shake);
+        audio_play_sound(snd_explosion,1,false);
     }
 } 
 else {

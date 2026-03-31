@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_dialogue_wall",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_dialogue_wall",
+  "parent":{
+    "name":"wall",
+    "path":"folders/GameVisual/CG/wall.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

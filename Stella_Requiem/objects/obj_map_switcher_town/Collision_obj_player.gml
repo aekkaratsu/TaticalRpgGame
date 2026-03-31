@@ -1,3 +1,3 @@
 if (keyboard_check_pressed(ord("E"))) {
-    transition_start(room_town,1700,500, 0.03); 
+    instance_create_depth(0, 0, -9999, obj_cg_wall);
 }

@@ -10,7 +10,8 @@ is_transitioning = false;
 cg_sequence = [
     { img: spr_cg_prologue_1, text: global.cg_dialogue_1 },
     { img: spr_cg_prologue_2, text: global.cg_dialogue_2 },
-    { img: photo_logo, text: global.cg_dialogue_3}
+    { img: spr_cg_prologue_3, text: global.cg_dialogue_3 },
+    { img: photo_logo, text: global.cg_dialogue_4}
 ];
 
 create_dialog(cg_sequence[current_scene].text);
