@@ -26,14 +26,19 @@ if (is_transitioning) {
                 target_zoom = 1.1;
             } 
             else if (current_scene == 2) {
+                target_zoom = 1;}
+            
+            else if (current_scene == 3) {
                 target_zoom = 0.8;
+                
             } else {
                 target_zoom = 1;
             }
         } 
         else {
-            transition_start(rm_tutorial, 1120, 408, 0.005); 
+            transition_start(rm_tutorial, 1120, 408, 0.002); 
             audio_stop_all();
+            audio_play_sound(snd_entergame,1,false);
             instance_destroy();
         }
     }

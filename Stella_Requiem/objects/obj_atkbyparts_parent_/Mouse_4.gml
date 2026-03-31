@@ -6,4 +6,5 @@ if (obj_battle_manager.enemy_turn || image_alpha <= 0) exit;
 if (image_alpha < 0.9) exit; 
 
 // 3. Execution: If all checks pass, run the button's action
+audio_play_sound(snd_intro_3,1,false)
 action();

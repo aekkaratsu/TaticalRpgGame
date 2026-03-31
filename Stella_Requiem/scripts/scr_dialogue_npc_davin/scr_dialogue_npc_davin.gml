@@ -3,12 +3,13 @@ global.town_dia_part1 = [
     { name: "JeyGrude", msg: "Found some decent copper wiring near the old ruins. Should fetch a good price." },
     { name: "Davin", msg: "Better cash it in first thing in the morning. You didn't forget what day it is tomorrow, right?" },
     { name: "JeyGrude", msg: "Uh... Tuesday?" },
-    { name: "Davin", msg: "Your sister's birthday, you blockhead! She'll have your head if you show up empty-handed." },
-    { name: "JeyGrude", msg: "Oh, crap. I completely forgot. I need to find her a gift." },
 ];
 
 global.town_dia_part2= [
+    { name: "Davin", msg: "Your sister's birthday, you blockhead! She'll have your head if you show up empty-handed." },
+    { name: "JeyGrude", msg: "Oh, crap. I completely forgot. I need to find her a gift." },
     { name: "Davin", msg: "Haha, you'd better hurry before the shops-- Wait. Do you hear that?" }
+    
 ]
 
 

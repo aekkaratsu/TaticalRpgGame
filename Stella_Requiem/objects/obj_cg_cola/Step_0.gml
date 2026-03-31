@@ -19,7 +19,7 @@ if (is_transitioning) {
     }
 } 
 else {
-    cg_alpha = lerp(cg_alpha, 1, 0.1);
+    cg_alpha = lerp(cg_alpha, 1, 0.02);
     
     if (!instance_exists(obj_dialog)) {
         is_transitioning = true;

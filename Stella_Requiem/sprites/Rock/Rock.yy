@@ -3,7 +3,7 @@
   "%Name":"Rock",
   "bboxMode":0,
   "bbox_bottom":127,
-  "bbox_left":2,
+  "bbox_left":0,
   "bbox_right":127,
   "bbox_top":1,
   "collisionKind":1,
