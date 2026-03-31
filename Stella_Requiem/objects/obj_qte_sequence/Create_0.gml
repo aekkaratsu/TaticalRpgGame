@@ -7,10 +7,10 @@ switch (diff) {
 }
 
 key_pool = [ 
-    vk_left, vk_right, vk_up, vk_down 
+    ord("A"), ord("D"), ord("W"), ord("S") 
 ]
 
-key_labels = ["L",    "R",      "U",   "D"];
+key_labels = ["A",    "D",      "W",   "S"];
 
 sequence = array_create(seq_length);
 for (var i = 0; i < seq_length; i++) {
